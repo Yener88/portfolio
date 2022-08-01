@@ -17,6 +17,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    img {
+        width: 100px;
+        margin-top: 20px;
+    }
 }
 
 .navbarLinks {

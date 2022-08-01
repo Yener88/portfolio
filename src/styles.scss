@@ -5,3 +5,22 @@ body {
     scroll-behavior: smooth;
     transition: 225ms ease-in-out;
 }
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(204, 204, 204);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgb(173, 173, 173);
+}
