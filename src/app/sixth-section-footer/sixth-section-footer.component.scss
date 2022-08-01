@@ -1,5 +1,5 @@
 footer {
-    height: 120px;
+    height: 200px;
     background-color: white;
     color: black;
     display: flex;
@@ -7,6 +7,17 @@ footer {
 }
 
 .footerContent {
-    max-width: 800px;
+    max-width: 1300px;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: 40px;
+        margin-left: 80px;
+    }
+    span {
+        color: #8491A0;
+    }
 }

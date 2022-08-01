@@ -2,4 +2,6 @@
 body {
     margin: 0px;
     font-family: 'Inter';
+    scroll-behavior: smooth;
+    transition: 225ms ease-in-out;
 }

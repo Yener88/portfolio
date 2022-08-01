@@ -1,5 +1,5 @@
 .fourthSection {
-    height: 1200px;
+    height: 1000px;
     background-color: #131111;
     color: white;
     display: flex;
@@ -7,6 +7,39 @@
 }
 
 .fourthSectionContent {
-    max-width: 800px;
+    max-width: 1100px;
     width: 100vw;
+}
+
+.aboutIntro {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #2dfcd8;
+    padding: 100px;
+    margin-bottom: 100px;
+    img {
+        width: 200px;
+        border-radius: 100%;
+        margin-right: 50px;
+    }
+}
+
+.aboutDescrip {
+    display: flex;
+    width: 1200px;
+    position: relative;
+    left: -55px;
+}
+
+.aboutDescripContent {
+    text-align: center;
+padding: 20px;
+
+    img {
+        padding: 20px;
+        width: 20px;
+        background-color: #2dfcd8;
+        border-radius: 100%;
+    }
 }
