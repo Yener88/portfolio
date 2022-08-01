@@ -11,5 +11,26 @@ export class SixthSectionFooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  openImprint() {
+    document.getElementById('imprint').classList.remove('d-none');
+  }
+
+  closeImprint() {
+    document.getElementById('imprint').classList.add('d-none');
+
+  }
+
+  openPolicy() {
+    document.getElementById('policy').classList.remove('d-none');
+  }
+
+  closePolicy() {
+    document.getElementById('policy').classList.add('d-none');
+  }
 
 }
+
+
+
+
