@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "portfolio-73a24": {
+      "hosting": {
+        "portfolio": [
+          "portfolio-73a24"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "portfolio-73a24"
+  }
+}
