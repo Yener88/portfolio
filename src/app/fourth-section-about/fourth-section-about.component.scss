@@ -27,6 +27,7 @@
 
 .aboutDescrip {
     display: flex;
+    justify-content: space-between;
     width: 1200px;
     position: relative;
     left: -55px;
@@ -34,12 +35,17 @@
 
 .aboutDescripContent {
     text-align: center;
-padding: 20px;
+    padding: 20px;
+    letter-spacing: 1px;
+    width: 220px;
 
     img {
         padding: 20px;
         width: 20px;
         background-color: #2dfcd8;
         border-radius: 100%;
+    }
+    span {
+        font-size: 18px;
     }
 }
