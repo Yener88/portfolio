@@ -2,9 +2,12 @@
 body {
     margin: 0px;
     font-family: 'Inter';
+}
+
+html {
     scroll-behavior: smooth;
     transition: 225ms ease-in-out;
-}
+  }
 
 ::-webkit-scrollbar {
     height: 5px;
