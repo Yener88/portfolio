@@ -1,21 +1,24 @@
 <div class="fifthSection" id="contact">
-    <div class="fifthSectionContent">
+    <div class="fifthSectionContent" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <br><br><br><br>
         <h1>Contact me.</h1>
         <form action="https://yener-bas.developerakademie.net/portfolio/send_mail.php" method="POST">
-            <span class="titleDescrip">Get in touch via the form below, or by emailing <a
-                    href="#">yener.bas@outlook.de</a></span> <br><br><br>
+
+            <span class="titleDescrip">Get in touch via the form below, or by emailing <a href="mailto: yener.bas@outlook.de">yener.bas@outlook.de</a></span> <br><br><br>
 
             <span class="title">Name</span><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
             <br><br>
             <span class="title">E-mail address</span><br>
-            <input id="email" type="email" placeholder="Enter your E-mail address">
+            <input id="email" name="email" type="email" placeholder="Enter your E-mail address" required>
             <br><br>
             <span class="title">Message</span><br>
-            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+            <textarea name="message" id="message" minlength="20" maxlength="2000" placeholder="Enter your message" required></textarea>
             <br><br>
-            <button class="submitbtn" type="submit">Send</button>
+            <button class="submitbtn" type="submit" required>Send</button>
+
         </form>
     </div>
 </div>

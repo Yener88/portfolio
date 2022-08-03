@@ -25,6 +25,10 @@
         font-family: 'Inter';
         font-size: 14px;
         letter-spacing: 0.5px;
+
+        &:focus {
+            border: 1px solid #2dfcd8;
+        }
     }
     textarea {
         background-color: #1a1a1a;
@@ -41,6 +45,10 @@
         font-size: 14px;
         letter-spacing: 0.5px;
         resize: none;
+        
+        &:focus {
+            border: 1px solid #2dfcd8;
+        }
     }
     button {
         background: none;

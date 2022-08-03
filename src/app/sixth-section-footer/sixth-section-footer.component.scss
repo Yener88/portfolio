@@ -21,6 +21,7 @@ footer {
 
 .footerLink {
     text-decoration: none;
+    color: #8491A0;
     cursor: pointer;
 
     &:hover {
@@ -42,17 +43,29 @@ footer {
 
 #policy, #imprint {
     position: absolute;
-    bottom: -4050px;
+    bottom: -3863px;
     color: white;
     background-color: #131111;
-    height: 80vh;
-    width: 80%;
+    height: 890px;
+    width: 60%;
     padding: 10px;
     overflow-x: hidden;
     overflow-y: auto;
-    border-radius: 5px;
-    border: 2px solid #2dfcd8;
-    box-shadow: 0px 0px 4px 2px #2dfcd8;
+    border: 1px solid #2dfcd8;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: rgba(152, 154, 255, 0.712);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    #policy {
+        text-align: start !important;
+    }
 
     button {
         position: absolute;
@@ -64,7 +77,6 @@ footer {
         font-size: 26px;
         color: #2dfcd8;
         cursor: pointer;
-
 
         &:hover {
             transform: scale(1.2);

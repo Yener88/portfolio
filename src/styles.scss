@@ -15,15 +15,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: #14352f;
+    background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: #2dfcd8;
+    background: rgba(45, 252, 217, 0.8);
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background: #a3fff0;
+    background: rgba(45, 252, 217, 1);
 }
