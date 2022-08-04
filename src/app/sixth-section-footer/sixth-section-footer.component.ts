@@ -12,6 +12,8 @@ export class SixthSectionFooterComponent implements OnInit {
   ngOnInit(): void {
   }
   
+
+  // open and close imprint and policy
   openImprint() {
     document.getElementById('imprint').classList.remove('d-none');
   }
