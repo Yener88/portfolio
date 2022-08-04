@@ -4,6 +4,9 @@ footer {
     color: black;
     display: flex;
     justify-content: center;
+    @media (max-width: 1110px) {
+        height: 120px;
+    }
 }
 
 .footerContent {
@@ -12,10 +15,23 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1110px) {
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
 
     img {
         width: 40px;
         margin-left: 80px;
+        @media (max-width: 1110px) {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 }
 

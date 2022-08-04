@@ -4,6 +4,9 @@
     color: white;
     display: flex;
     justify-content: center;
+    @media (max-width: 1110px) {
+        height: 950px;
+    }
 }
 
 .thirdSectionContent {
@@ -12,6 +15,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media (max-width: 1110px) {
+        width: 100%;
+        overflow: hidden;
+    }
 }
 
 .workApps {
@@ -33,10 +40,22 @@
     object-fit: cover;
     opacity: 0.7;
 
+    @media (max-width: 1110px) {
+        width: 150px;
+        height: 150px;
+    }
+
     &:hover {
         opacity: 1;
         transform: scale(1.1);
         transition: 225ms ease-in-out;
+    }
+}
+
+.mobileMode {
+    @media (max-width: 1110px) {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -45,6 +64,9 @@
     position: absolute;
     top: 20px;
     left: 120px;
+    @media (max-width: 1110px) {
+        left: 50px;
+    }
 }
 
 .workAppsTitle2 {
@@ -52,6 +74,10 @@
     position: absolute;
     top: 20px;
     left: 460px;
+    @media (max-width: 1110px) {
+        top: 217px;
+        left: 51px;
+    }
 }
 
 .workAppsTitle3 {
@@ -59,6 +85,10 @@
     position: absolute;
     top: 20px;
     left: 120px;
+    @media (max-width: 1110px) {
+        top: 20px;
+        left: 45px;
+    }
 }
 
 .workAppsTitle4 {
@@ -66,15 +96,21 @@
     position: absolute;
     top: 20px;
     left: 460px;
+    @media (max-width: 1110px) {
+        top: 215px;
+        left: 55px;
+    }
 }
-
-
 
 .workAppsTitleJS1 {
     color: white;
     position: absolute;
     top: 300px;
     left: 240px;
+    @media (max-width: 1110px) {
+        top: 150px;
+        left: 90px;
+    }
 }
 
 .workAppsTitleJS2 {
@@ -82,16 +118,21 @@
     position: absolute;
     top: 300px;
     left: 240px;
+    @media (max-width: 1110px) {
+        top: 151px;
+        left: 91px;
+    }
 }
-
-
-
 
 .workAppsTitleJS3 {
     color: white;
     position: absolute;
     top: 300px;
     left: 584px;
+    @media (max-width: 1110px) {
+        top: 347px;
+        left: 89px;
+    }
 }
 
 .workAppsTitleAng1 {
@@ -99,4 +140,8 @@
     position: absolute;
     top: 300px;
     left: 603px;
+    @media (max-width: 1110px) {
+        top: 348px;
+        left: 112px;
+    }
 }

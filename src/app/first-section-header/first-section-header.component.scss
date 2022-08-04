@@ -6,29 +6,46 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+
 }
 
 .headerContent {
     max-width: 1100px;
     width: 100vw;
+    @media (max-width: 1110px) {
+        width: 100%;
+        overflow: hidden;
+    }
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1110px) {
+
+    }
     img {
         width: 150px;
         margin-top: 20px;
+        @media (max-width: 1110px) {
+            width: 100px;
+        }
     }
 }
 
 .navbarLinks {
+    margin-right: 20px;
     a {
         text-decoration: none;
         color: white;
         padding-left: 25px;
         letter-spacing: 2px;
+
+        @media (max-width: 1110px) {
+            padding-left: 5px;
+            letter-spacing: 0px;
+        }
 
         &:hover {
             color: #fa2759;
@@ -40,10 +57,23 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+
+    @media (max-width: 1110px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
 }
 
 h1 {
     font-size: 64px;
+
+    @media (max-width: 1110px) {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
 }
 
 .IntroStyle1 {
@@ -77,6 +107,10 @@ h1 {
         width: 350px;
         height: auto;
         border-radius: 100%;
+
+        @media (max-width: 1110px) {
+            width: 200px;
+        }
     }
 }
 
@@ -87,5 +121,8 @@ h1 {
         border-radius: 100%;
         padding: 16px;
         width: 20px;
+        @media (max-width: 1110px) {
+            margin-bottom: 10px;
+        }
     }
 }
