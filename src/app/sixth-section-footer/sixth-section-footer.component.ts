@@ -16,6 +16,7 @@ export class SixthSectionFooterComponent implements OnInit {
   // open and close imprint and policy
   openImprint() {
     document.getElementById('imprint').classList.remove('d-none');
+    document.getElementById('policy').classList.add('d-none');
   }
 
   closeImprint() {
@@ -25,6 +26,7 @@ export class SixthSectionFooterComponent implements OnInit {
 
   openPolicy() {
     document.getElementById('policy').classList.remove('d-none');
+    document.getElementById('imprint').classList.add('d-none');
   }
 
   closePolicy() {

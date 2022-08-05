@@ -2,12 +2,13 @@
 body {
     margin: 0px;
     font-family: 'Inter';
-    
+    overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
     transition: 225ms ease-in-out;
+    overflow-x: hidden;
   }
 
 ::-webkit-scrollbar {
