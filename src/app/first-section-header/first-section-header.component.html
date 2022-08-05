@@ -1,11 +1,20 @@
-<header>
+<header id="home">
     <div class="headerContent">
         <div class="navbar">
             <img src="assets/img/logowhite.png">
-            <div class="navbarLinks">
+            <div class="navbarLinks hideMobile">
                 <a href="#">HOME</a>
                 <a href="#about">ABOUT</a>
-                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#projects">PROJECTS</a>
+            </div>
+            <div class="mobileNavbar hideDesktop">
+                <img (click)="mobileNavbar()" src="assets/img/mobilemenu.png">
+            </div>
+            <div id="mobileNavbarContent" class="d-none hideDesktop">
+                <span (click)="closeMobileNavbar()" class="closeMobileBtn">X</span>
+                <a (click)="openHome()" href="#home">HOME</a>
+                <a (click)="openAbout()" href="#about">ABOUT</a>
+                <a (click)="openProjects()" href="#projects">PROJECTS</a>
             </div>
         </div>
 

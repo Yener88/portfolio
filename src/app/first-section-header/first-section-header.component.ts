@@ -12,4 +12,23 @@ export class FirstSectionHeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  mobileNavbar() {
+    document.getElementById('mobileNavbarContent').classList.remove('d-none');
+  }
+
+  closeMobileNavbar() {
+    document.getElementById('mobileNavbarContent').classList.add('d-none');
+  }
+
+  openHome() { 
+    this.closeMobileNavbar();
+  }
+
+  openAbout() { 
+    this.closeMobileNavbar();
+  }
+
+  openProjects() {
+    this.closeMobileNavbar();
+  }
 }

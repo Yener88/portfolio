@@ -70,6 +70,12 @@ footer {
     border: 1px solid #2dfcd8;
     text-align: center;
 
+    @media (max-width: 1110px) {
+        bottom: -4965px;
+        height: 792px;
+        width: 93%;
+    }
+
     a {
         text-decoration: none;
         color: rgba(152, 154, 255, 0.712);
