@@ -41,7 +41,7 @@ footer {
 
 .footerLink {
     text-decoration: none;
-    color: #8491A0;
+    color: #8491a0;
     cursor: pointer;
 
     &:hover {
@@ -53,15 +53,25 @@ footer {
     display: none;
 }
 
-.footerPos {
+.footerPos1 {
     display: flex;
-    color: #8491A0;
+    color: #8491a0;
     cursor: default;
+    margin-left: 40px;
+    @media (max-width: 1110px) {
+        margin-left: 0px;
+    }
 }
 
+.footerPos2 {
+    margin-right: 40px;
+    @media (max-width: 1110px) {
+        margin-right: 0px;
+    }
+}
 
-
-#policy, #imprint {
+#policy,
+#imprint {
     position: absolute;
     bottom: -3762px;
     color: white;

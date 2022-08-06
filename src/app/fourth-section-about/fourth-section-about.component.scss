@@ -44,10 +44,13 @@
         width: 280px;
         height: 280px;
         border-radius: 50%;
-        margin-right: 50px;
+        margin-right: 100px;
         object-fit: cover;
+
         @media (max-width: 1110px) {
             margin-right: 0px;
+            width: 180px;
+            height: 180px;
         }
     }
 }
