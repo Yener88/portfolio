@@ -16,6 +16,9 @@
         width: 100%;
         overflow: hidden;
     }
+    h1 {
+        cursor: default;
+    }
 }
 
 h1 {
@@ -62,6 +65,7 @@ h1 {
 
     span {
         font-weight: bold;
+        cursor: default;
     }
 }
 

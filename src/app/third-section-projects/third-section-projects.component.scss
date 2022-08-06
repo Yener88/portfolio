@@ -19,13 +19,16 @@
         width: 100%;
         overflow: hidden;
     }
+    h1 {
+        cursor: default;
+    }
 }
 
 .workApps {
     margin: 20px;
     a {
-    display: inline-block;
-    cursor: default;
+        display: inline-block;
+        cursor: default;
     }
 }
 

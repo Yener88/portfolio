@@ -7,7 +7,6 @@
     @media (max-width: 1110px) {
         height: 815px;
     }
-    
 }
 
 .fifthSectionContent {
@@ -25,6 +24,14 @@
             align-self: flex-start;
             margin-left: 18px;
         }
+    }
+
+    h1 {
+        cursor: default;
+    }
+
+    span {
+        cursor: default;
     }
 
     input {
