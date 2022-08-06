@@ -33,9 +33,11 @@
     }
 
     img {
-        width: 200px;
-        border-radius: 100%;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
         margin-right: 50px;
+        object-fit: cover;
         @media (max-width: 1110px) {
             margin-right: 0px;
         }
