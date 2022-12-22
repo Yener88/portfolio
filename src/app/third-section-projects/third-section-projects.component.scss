@@ -153,3 +153,22 @@
         left: 112px;
     }
 }
+
+.ApkDownloadButton {
+    color: white;
+    width: 300px;
+    position: absolute;
+    top: 325px;
+    left: 385px;
+    text-decoration: none;
+    cursor: pointer !important;
+
+    @media (max-width: 1110px) {
+        top: 379px;
+        left: -28px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
