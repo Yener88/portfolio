@@ -8,9 +8,18 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 
 export class FourthSectionAboutComponent implements OnInit, OnDestroy {
   texts = [
-    `" I am a passionate Frontend Developer with a background as an information electronics technician who loves pushing boundaries and learning new exciting things. "`,
-    `" When I was at school, I made my first experience and was already very interested in software and hardware of different kinds of electronics. "`,
-    `" To turn my passion into a profession, I completed the intensive course at the Developer Academy in August 2022. "`
+    `<span id="trans19">
+        " When I was at school, I made my first experience and was already very interested in software and hardware of different kinds of electronics. "
+    </span>`,
+    `<span id="trans21">
+        " At the age of 15, I programmed my first homepage which was built like a social media profile about myself based on HTML/CSS. "
+    </span>`,
+    `<span id="trans23">
+        " After school, I completed an apprenticeship in IT and gained a total of around 8 years of professional experience. "
+    </span>`,
+    `<span id="trans25">
+        " To turn my passion into a profession, I completed the intensive course at the Developer Academy in August 2022. "
+    </span>`
   ];
   currentIndex = 0;
   intervalId: any;
