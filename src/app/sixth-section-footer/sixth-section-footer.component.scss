@@ -124,6 +124,9 @@ footer {
         @media (max-width: 1110px) {
             left: 95%;
         }
+        @media (max-width: 680px) {
+            left: 92%;
+        }
         &:hover {
             transform: scale(1.2);
             transition: 225ms ease-in-out;
