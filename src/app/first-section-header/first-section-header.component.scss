@@ -1,6 +1,7 @@
 header {
     height: 100vh;
-    background-color: #000000;
+    background: linear-gradient(to bottom, #2dfcd913 0%, #fa275813 100%),
+        linear-gradient(to bottom, #8f8f8f 0%, #8f8f8f 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -11,6 +12,8 @@ header {
 .headerContent {
     max-width: 1100px;
     width: 100vw;
+    display: flex;
+    justify-content: center;
     @media (max-width: 1110px) {
         width: 100%;
         overflow: hidden;
@@ -18,34 +21,67 @@ header {
 }
 
 .navbar {
+    max-width: 1100px;
+    width: 90vw;
+    height: 100px;
+    cursor: pointer;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to bottom, #4d0000b4 0%, #0000009c 100%);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    z-index: 1;
     @media (max-width: 1110px) {
+        width: 100%;
+        overflow: hidden;
+        height: 90px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
     img {
-        width: 150px;
-        margin-top: 20px;
+        width: 45px;
+        height: 50px;
+        margin-top: 45px;
+        margin-bottom: 10px;
+        margin-right: 30px;
+        &:hover {
+            opacity: 0.7;
+        }
         @media (max-width: 1110px) {
-            width: 100px;
+            width: 55px;
             margin-left: 20px;
+            margin-right: 3px;
+            margin-top: 45px;
         }
     }
 }
 
+#clickLogoStyle {
+    width: 110px !important;
+    height: 70px !important;
+    margin-bottom: 50px !important;
+    object-fit: cover;
+    @media (max-width: 1110px) {
+        width: 70px !important;
+        height: 45px !important;
+        margin-bottom: 50px !important;
+    }
+}
+
 .navbarLinks {
-    margin-right: 20px;
     a {
         text-decoration: none;
         color: white;
         margin-left: 25px;
         letter-spacing: 2px;
-
         @media (max-width: 1110px) {
             padding-left: 5px;
             letter-spacing: 0px;
         }
-
         &:hover {
             color: #fa2759;
         }
@@ -55,7 +91,6 @@ header {
 .mobileNavbar {
     margin-right: 20px;
     margin-bottom: 40px;
-
     img {
         width: 40px;
     }
@@ -86,19 +121,19 @@ header {
 }
 
 #mobileNavbarContent {
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     left: 0px;
     width: 100%;
-    height: 93vh;
+    height: 100%;
     background-color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding-top: 50px;
-
+    z-index: 0;
     a {
         color: white;
         text-decoration: none;
@@ -107,23 +142,20 @@ header {
     }
 }
 
-
 .intro {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-
+    margin-top: 240px;
     @media (max-width: 1110px) {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 115px;
     }
 }
 
 h1 {
     font-size: 64px;
-
     @media (max-width: 1110px) {
         font-size: 30px;
 
@@ -131,11 +163,11 @@ h1 {
     }
 }
 
-.IntroStyle1 {
+.introStyle1 {
     color: #fa2759;
 }
 
-.IntroStyle2 {
+.introStyle2 {
     color: #2dfcd8;
 }
 
@@ -156,6 +188,7 @@ h1 {
         background-color: #131111;
     }
 }
+
 .introLeft {
     cursor: default;
 }
@@ -164,12 +197,15 @@ h1 {
     img {
         width: 350px;
         height: 350px;
-        border-radius: 50%;
+        border-top-left-radius: 65%;
+        border-top-right-radius: 20%;
         object-fit: cover;
+        margin-left: 30px;
 
         @media (max-width: 1110px) {
-            width: 200px;
-            height: 200px;
+            width: 280px;
+            height: 280px;
+            margin-left: 0px;
         }
     }
 }
@@ -184,5 +220,18 @@ h1 {
         @media (max-width: 1110px) {
             margin-bottom: 10px;
         }
+    }
+}
+
+#pngUnderline {
+    background: #2dfcd8;
+    height: 1px;
+    max-width: 1100px;
+    width: 100vw;
+    position: absolute;
+    top: 589px;
+    @media (max-width: 1110px) {
+        top: 395px;
+        width: 90vw;
     }
 }

@@ -20,15 +20,16 @@ export class FirstSectionHeaderComponent implements OnInit {
     document.getElementById('mobileNavbarContent').classList.add('d-none');
   }
 
-  openHome() { 
+  openContact() {
     this.closeMobileNavbar();
   }
 
-  openAbout() { 
+  openAbout() {
     this.closeMobileNavbar();
   }
 
   openProjects() {
     this.closeMobileNavbar();
   }
+
 }

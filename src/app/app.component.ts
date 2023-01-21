@@ -7,4 +7,123 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  getElById(id, text) {
+    document.getElementById(id).innerHTML = `${text}`;;
+  }
+  // ''''''''''''''''TRANSLATE FUNCTION''''''''''''''''
+  clickLanguageDE() {
+    this.getElById('trans1', `ÜBER MICH`);
+    this.getElById('trans2', `PROJEKTE`);
+    this.getElById('trans3', `KONTAKT`);
+    this.getElById('trans4', `Hallo, <br>
+    ich bin <span style="color: #fa2759;">Yener</span> Bas <br>
+    Frontend Entwickl<span style="color: #2dfcd8;">e</span>r`);
+    this.getElById('trans5', `Technologien`);
+    this.getElById('trans6', `Projekte`);
+    this.getElById('trans7', `Laden Sie die mobile Version(APK)`);
+    this.getElById('trans8', `Kontaktformular`);
+    this.getElById('trans9', `Kontaktieren Sie uns über das untenstehende Formular oder per E-Mail an <a href="mailto: yener.bas@outlook.de" style="color: #2dfcd8; text-decoration: none;">yener.bas@outlook.de</a>`);
+    this.getElById('trans10', `Name`);
+    this.getElById('trans11', `E-Mail Adresse`);
+    this.getElById('trans12', `Nachricht`);
+    this.getElById('trans13', `Senden`);
+    this.getElById('trans14', `Impressum`);
+    this.getElById('trans15', `Datenschutz`);
+    this.getElById('about', `Über mich`);
+    this.getElById('trans17', `<em>" Ich bin ein leidenschaftlicher Frontend-Entwickler mit einem Hintergrund als Informationselektroniker Techniker, der es liebt, Grenzen zu überschreiten und neue aufregende Dinge zu lernen. "</em>`);
+    this.getElById('trans18', `Meine Reise begann`);
+    this.getElById('trans19', `Schon während meiner Schulzeit habe ich erste Erfahrungen gemacht und mich schon sehr für Soft- und Hardware unterschiedlicher Elektronik interessiert.`);
+    this.getElById('trans20', `Erster Kontakt`);
+    this.getElById('trans21', `Mit 15 Jahren programmierte ich meine erste Homepage, die wie ein Social-Media-Profil über mich auf Basis von HTML/CSS aufgebaut war.`);
+    this.getElById('trans22', `IT-Erfahrung`);
+    this.getElById('trans23', `Nach der Schule habe ich eine Ausbildung zum Informationselektroniker absolviert und insgesamt rund 9 Jahre Berufserfahrung gesammelt.`);
+    this.getElById('trans24', `Frontend Entwickler`);
+    this.getElById('trans25', `Um meine Leidenschaft zum Beruf zu machen, habe ich im August 2022 den Intensivkurs an der Developer Academy absolviert.`);
+    this.getElById('trans26', `Impressum`);
+    this.getElById('trans27', `NACH § 5 TMG`);
+    this.getElById('trans28', `VERTRETEN DURCH`);
+    this.getElById('trans29', `KONTAKT:`);
+    document.getElementById('name').setAttribute('placeholder', 'Gebe deinen Namen ein');
+    document.getElementById('message').setAttribute('placeholder', 'Gebe deine E-Mail Adresse ein');
+    document.getElementById('email').setAttribute('placeholder', 'Gebe hier deine Nachricht ein');
+
+
+    // this.getElById('trans',``);
+  }
+
+
+  clickLanguageEN() {
+    this.getElById('trans1', `ABOUT`);
+    this.getElById('trans2', `PROJECTS`);
+    this.getElById('trans3', `CONTACT`);
+    this.getElById('trans4', `Hi, <br>
+    i'm <span style="color: #fa2759;">Yener</span> Bas <br>
+    frontend develop<span style="color: #2dfcd8;">e</span>r`);
+    this.getElById('trans5', `Technologies`);
+    this.getElById('trans6', `Projects`);
+    this.getElById('trans7', `Download the Mobile Version(APK)`);
+    this.getElById('trans8', `Contact me.`);
+    this.getElById('trans9', `Get in touch via the form below, or by emailing <a href="mailto: yener.bas@outlook.de" style="color: #2dfcd8; text-decoration: none;">yener.bas@outlook.de</a>`);
+    this.getElById('trans10', `Name`);
+    this.getElById('trans11', `E-mail address`);
+    this.getElById('trans12', `Message`);
+    this.getElById('trans13', `Send`);
+    this.getElById('trans14', `Imprint`);
+    this.getElById('trans15', `Privacy Policy`);
+    this.getElById('about', `About me`);
+    this.getElById('trans17', `<em>" I am a passionate Frontend Developer with a background as an information electronics technician who loves pushing boundaries and learning new exciting things. "</em>`);
+    this.getElById('trans18', `My Journey Began`);
+    this.getElById('trans19', `When I was at school, I made my first experience and was already very interested in software and
+    hardware of different kinds of electronics.`);
+    this.getElById('trans20', `First Contact`);
+    this.getElById('trans21', `At the age of 15, I programmed my first homepage which was built like a social media profile about myself based on HTML/CSS.`);
+    this.getElById('trans22', `IT Experience`);
+    this.getElById('trans23', `After school, I completed an apprenticeship in IT and gained a total of around 8 years of professional experience.`);
+    this.getElById('trans24', `Software Engineer`);
+    this.getElById('trans25', `To turn my passion into a profession, I completed the intensive course at the Developer Academy in August 2022.`);
+    this.getElById('trans26', `Imprint`);
+    this.getElById('trans27', `ACCORDING TO § 5 TMG`);
+    this.getElById('trans28', `REPRESENTED BY:`);
+    this.getElById('trans29', `CONTACT:`);
+    document.getElementById('name').setAttribute('placeholder', 'Enter your name');
+    document.getElementById('message').setAttribute('placeholder', 'Enter your E-mail address');
+    document.getElementById('email').setAttribute('placeholder', 'Enter your message');
+  }
+
+  clickLanguageTR() {
+    this.getElById('trans1', `HAKKIMDA`);
+    this.getElById('trans2', `PROJELER`);
+    this.getElById('trans3', `İLETİŞİM`);
+    this.getElById('trans4', `Merhaba, <br>
+    ben <span style="color: #fa2759;">Yener</span> Baş <br> frontend develop<span style="color: #2dfcd8;">e</span>r`);
+    this.getElById('trans5', `Teknolojiler`);
+    this.getElById('trans6', `Projeler`);
+    this.getElById('trans7', `Mobil Versiyonu İndir(APK)`);
+    this.getElById('trans8', `İletişime geçmek.`);
+    this.getElById('trans9', `Aşağıdaki form aracılığıyla veya <a href="mailto: yener.bas@outlook.de" style="color: #2dfcd8; text-decoration: none;">yener.bas@outlook.de</a> adresine e-posta göndererek iletişime geçin`);
+    this.getElById('trans10', `İsim`);
+    this.getElById('trans11', `E-posta adresi`);
+    this.getElById('trans12', `mesaj`);
+    this.getElById('trans13', `Gönder`);
+    this.getElById('trans14', `Künye`);
+    this.getElById('trans15', `Kişisel verilerin korunması`);
+    this.getElById('about', `Hakkımda`);
+    this.getElById('trans17', `<em>" Bilgi elektroniği geçmişi olan tutkulu bir Frontend Developer'ım. Sınırları zorlamayı ve yeni heyecan verici şeyler öğrenmeyi seven teknisyen. "</em>`);
+    this.getElById('trans18', `Yolculuğum Başladı`);
+    this.getElById('trans19', `Okuldayken ilk deneyimimi yaptım ve farklı elektronik türlerinin yazılım ve donanımına zaten çok ilgi duyuyordum.`);
+    this.getElById('trans20', `İlk temas`);
+    this.getElById('trans21', `15 yaşında, kendimle ilgili bir sosyal medya profili gibi oluşturulmuş ilk ana sayfamı HTML/CSS tabanlı olarak programladım.`);
+    this.getElById('trans22', `BT Deneyimi`);
+    this.getElById('trans23', `Okuldan sonra BT alanında çıraklık yaptım ve toplamda yaklaşık 8 yıllık mesleki deneyim kazandım.`);
+    this.getElById('trans24', `Yazılım Mühendisi`);
+    this.getElById('trans25', `Tutkumu mesleğe dönüştürmek için Developer Academy'de yoğun kursu Ağustos 2022'de tamamladım.`);
+    this.getElById('trans26', `Künye`);
+    this.getElById('trans27', `§ 5 TMG'YE GÖRE`);
+    this.getElById('trans28', `İLE TEMSİL EDİLEN`);
+    this.getElById('trans29', `TEMAS:`);
+    document.getElementById('name').setAttribute('placeholder', 'Adınızı giriniz');
+    document.getElementById('message').setAttribute('placeholder', 'E-posta adresinizi giriniz');
+    document.getElementById('email').setAttribute('placeholder', 'Mesajınızı buraya girin');
+  }
 }

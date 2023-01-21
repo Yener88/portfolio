@@ -11,5 +11,4 @@ export class FifthSectionContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
