@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'portfolio';
 
-  getElById(id, text) {
+  getElById(id, text) {      // this.getElById('trans',``);
     document.getElementById(id).innerHTML = `${text}`;;
   }
   // ''''''''''''''''TRANSLATE FUNCTION''''''''''''''''
@@ -47,11 +47,7 @@ export class AppComponent {
     document.getElementById('name').setAttribute('placeholder', 'Gebe deinen Namen ein');
     document.getElementById('message').setAttribute('placeholder', 'Gebe deine E-Mail Adresse ein');
     document.getElementById('email').setAttribute('placeholder', 'Gebe hier deine Nachricht ein');
-
-
-    // this.getElById('trans',``);
   }
-
 
   clickLanguageEN() {
     this.getElById('trans1', `ABOUT`);

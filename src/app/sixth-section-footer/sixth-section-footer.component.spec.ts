@@ -8,9 +8,9 @@ describe('SixthSectionFooterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SixthSectionFooterComponent ]
+      declarations: [SixthSectionFooterComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(SixthSectionFooterComponent);
     component = fixture.componentInstance;

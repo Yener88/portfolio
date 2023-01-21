@@ -7,17 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondSectionSkillsComponent implements OnInit {
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  language: 'english' | 'german' = 'english';
-  clickLanguageButton() {
-    if (this.language === 'english') {
-      this.language = 'german';
-    } else {
-      this.language = 'english';
-    }
   }
 }

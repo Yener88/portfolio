@@ -31,5 +31,4 @@ export class FirstSectionHeaderComponent implements OnInit {
   openProjects() {
     this.closeMobileNavbar();
   }
-
 }

@@ -11,7 +11,7 @@ export class SixthSectionFooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
 
   // open and close imprint and policy
   openImprint() {

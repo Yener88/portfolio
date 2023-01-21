@@ -8,9 +8,9 @@ describe('FifthSectionContactComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FifthSectionContactComponent ]
+      declarations: [FifthSectionContactComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(FifthSectionContactComponent);
     component = fixture.componentInstance;
