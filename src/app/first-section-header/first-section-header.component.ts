@@ -14,7 +14,7 @@ export class FirstSectionHeaderComponent implements OnInit {
 
   ngOnInit(): void {
     document.addEventListener("contextmenu", (event) => {
-      event.preventDefault();
+      // event.preventDefault();
       console.log('Wer die Konsole nicht ehrt, ist das Programmieren nicht wert!');
     });
   }

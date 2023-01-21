@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     @media (max-width: 1110px) {
-        height: 950px;
+        height: 1540px;
     }
 }
 
@@ -17,7 +17,6 @@
     align-items: center;
     flex-direction: column;
     @media (max-width: 1110px) {
-        width: 100%;
         overflow: hidden;
     }
     h1 {
@@ -30,15 +29,12 @@
     a {
         display: inline-block;
         cursor: pointer;
+        border: 1.5px solid #2dfcd8;
     }
 }
 
-.borderAngular {
+.borderAfter {
     border: 1.5px solid #fa2759;
-}
-
-.borderJavaScript {
-    border: 1.5px solid #2dfcd8;
 }
 
 .workAppStyleAhref {
@@ -46,8 +42,6 @@
     width: 300px;
     height: 300px;
     @media (max-width: 1110px) {
-        width: 152px;
-        height: 152px;
     }
 }
 
@@ -55,15 +49,12 @@
     width: 300px;
     height: 300px;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.15;
     cursor: pointer;
     transition: 225ms ease-in-out;
+    z-index: 1;
     @media (max-width: 1110px) {
-        width: 150px;
-        height: 150px;
-        opacity: 0.5;
     }
-
     &:hover {
         opacity: 1;
         transform: scale(1.1);
@@ -81,107 +72,149 @@
 .workAppsTitle1 {
     color: white;
     position: absolute;
-    top: 20px;
-    left: 120px;
+    top: 25px;
+    left: 95px;
+    font-size: 24px;
     @media (max-width: 1110px) {
-        left: 50px;
     }
 }
 
 .workAppsTitle2 {
     color: white;
     position: absolute;
-    top: 20px;
-    left: 460px;
+    top: 367px;
+    left: 98px;
+    font-size: 24px;
     @media (max-width: 1110px) {
-        top: 217px;
-        left: 51px;
     }
 }
 
 .workAppsTitle3 {
     color: white;
     position: absolute;
-    top: 20px;
-    left: 120px;
+    top: 25px;
+    left: 90px;
+    font-size: 24px;
     @media (max-width: 1110px) {
-        top: 20px;
-        left: 45px;
     }
 }
 
 .workAppsTitle4 {
     color: white;
     position: absolute;
-    top: 20px;
-    left: 460px;
+    top: 25px;
+    left: 445px;
+    font-size: 24px;
     @media (max-width: 1110px) {
-        top: 215px;
-        left: 55px;
+        top: 373px;
+        left: 105px;
     }
 }
 
 .workAppsTitleJS1 {
     color: white;
     position: absolute;
-    top: 300px;
-    left: 240px;
+    top: 60px;
+    left: 55px;
     @media (max-width: 1110px) {
-        top: 150px;
-        left: 90px;
     }
 }
 
 .workAppsTitleJS2 {
     color: white;
     position: absolute;
-    top: 300px;
-    left: 240px;
+    top: 60px;
+    left: 77px;
     @media (max-width: 1110px) {
-        top: 151px;
-        left: 91px;
     }
 }
 
 .workAppsTitleJS3 {
     color: white;
     position: absolute;
-    top: 300px;
-    left: 581px;
+    top: 60px;
+    left: 400px;
     @media (max-width: 1110px) {
-        top: 341px;
-        left: 89px;
+        top: 406px;
+        left: 62px;
     }
 }
 
 .workAppsTitleAng1 {
     color: white;
     position: absolute;
-    top: 300px;
-    left: 601px;
+    top: 60px;
+    left: 398px;
     @media (max-width: 1110px) {
-        top: 342px;
-        left: 112px;
+        top: 411px;
+        left: 56px;
     }
 }
 
 .ApkDownloadButton {
     color: white;
     position: absolute;
-    top: 325px;
-    left: 385px;
-    text-decoration: none;
+    top: 292px;
+    left: 376px;
     cursor: pointer !important;
     transition: 225ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.363);
+    text-decoration: none;
+    padding-left: 3px;
+    padding-right: 3px;
     @media (max-width: 1110px) {
-        top: 372px;
-        left: -50px;
-        width: 300px;
+        top: 636px;
+        left: 36px;
         text-align: center;
     }
-
     &:hover {
         color: #2dfcd8;
+        background-color: rgba(0, 0, 0, 0.363);
         transition: 225ms ease-in-out;
+    }
+}
+
+#workAppsDescrip1 {
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 41px;
+    width: 250px;
+    text-align: center;
+    @media (max-width: 1110px) {
+    }
+}
+#workAppsDescrip2 {
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 383px;
+    width: 250px;
+    text-align: center;
+    @media (max-width: 1110px) {
+        top: 515px;
+        left: 45px;
+    }
+}
+#workAppsDescrip3 {
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 45px;
+    width: 250px;
+    text-align: center;
+    @media (max-width: 1110px) {
+    }
+}
+#workAppsDescrip4 {
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 389px;
+    width: 250px;
+    text-align: center;
+    @media (max-width: 1110px) {
+        top: 531px;
+        left: 43px;
     }
 }

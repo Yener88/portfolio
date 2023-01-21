@@ -47,6 +47,10 @@ export class AppComponent {
     document.getElementById('name').setAttribute('placeholder', 'Gebe deinen Namen ein');
     document.getElementById('message').setAttribute('placeholder', 'Gebe deine E-Mail Adresse ein');
     document.getElementById('email').setAttribute('placeholder', 'Gebe hier deine Nachricht ein');
+    this.getElById('workAppsDescrip1', `Das Index der Pokemon, das auf API basierte Pokedex! Mit umfangreichen Details und erweiterten Funktionen wie in der Suche alle Pokemon zu finden, zu favorisieren und zu verwalten.`);
+    this.getElById('workAppsDescrip2', `El Pollo Loco ist ein humorvolles Jump-and-Run-Spiel, das mit objektorientiertem JavaScript erstellt wurde und als Einführung in die Angular-Entwicklung dient.`);
+    this.getElById('workAppsDescrip3', `Team Table ist ein Tool, mit dem Sie Ihre Arbeit organisieren und effizienter gestalten können, ähnlich einem Kanban-Board.`);
+    this.getElById('workAppsDescrip4', `Das beliebte Kartenspiel, das in einem Online-Desktop-Format verfügbar ist und es mehreren Benutzern ermöglicht, gleichzeitig auf verschiedenen Geräten zu spielen.`);
   }
 
   clickLanguageEN() {
@@ -85,6 +89,10 @@ export class AppComponent {
     document.getElementById('name').setAttribute('placeholder', 'Enter your name');
     document.getElementById('message').setAttribute('placeholder', 'Enter your E-mail address');
     document.getElementById('email').setAttribute('placeholder', 'Enter your message');
+    this.getElById('workAppsDescrip1', `Index of Pokemon, API based Pokedex! With extensive details and advanced functions such as finding, favorite and managing all Pokemon in the search.`);
+    this.getElById('workAppsDescrip2', `El Pollo Loco is a humorous jump-and-run game created using object-oriented JavaScript and serving as an introduction to Angular development.`);
+    this.getElById('workAppsDescrip3', `Team Table is a tool used to organize and improve the efficiency of your work, similar to a Kanban Board.`);
+    this.getElById('workAppsDescrip4', `The popular card game available in an online, desktop format, allowing multiple users to play on various devices simultaneously.`);
   }
 
   clickLanguageTR() {
@@ -121,5 +129,9 @@ export class AppComponent {
     document.getElementById('name').setAttribute('placeholder', 'Adınızı giriniz');
     document.getElementById('message').setAttribute('placeholder', 'E-posta adresinizi giriniz');
     document.getElementById('email').setAttribute('placeholder', 'Mesajınızı buraya girin');
+    this.getElById('workAppsDescrip1', `Pokemon Endeksi, API tabanlı Pokedex! Aramada tüm Pokemon'u bulma, favorilere ekleme ve yönetme gibi kapsamlı ayrıntılar ve gelişmiş işlevlerle.`);
+    this.getElById('workAppsDescrip2', `El Pollo Loco, nesne yönelimli JavaScript kullanılarak oluşturulan ve Angular geliştirmeye giriş işlevi gören komik bir zıpla ve koş oyunudur.`);
+    this.getElById('workAppsDescrip3', `Team Table, işinizi organize etmeniz ve verimliliğinizi arttırmak için kullanabileceğiniz bir araçtır, Kanban Board benzeri.`);
+    this.getElById('workAppsDescrip4', `Çevrimiçi, masaüstü biçiminde sunulan ve birden çok kullanıcının aynı anda çeşitli cihazlarda oynamasına olanak tanıyan popüler kart oyunu.`);
   }
 }
