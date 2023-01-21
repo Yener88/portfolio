@@ -20,7 +20,7 @@
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.45);
+    background: linear-gradient(to bottom, #4d0000b4 0%, #0000009c 100%);
     @media (max-width: 1110px) {
         border-top-left-radius: 0px;
         flex-direction: column;
