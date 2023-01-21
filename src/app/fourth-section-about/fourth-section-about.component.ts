@@ -25,7 +25,7 @@ export class FourthSectionAboutComponent implements OnInit, OnDestroy {
     this.intervalId = setInterval(() => {
       document.getElementById('trans17').innerHTML = this.texts[this.currentIndex];
       this.currentIndex = (this.currentIndex + 1) % this.texts.length;
-    }, 2000);
+    }, 6000);
   }
 
 
