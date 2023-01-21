@@ -31,7 +31,7 @@ export class AppComponent {
     this.getElById('trans14', `Impressum`);
     this.getElById('trans15', `Datenschutz`);
     this.getElById('about', `Über mich`);
-    this.getElById('trans17', `<em>" Ich bin ein leidenschaftlicher Frontend-Entwickler mit einem Hintergrund als Informationselektroniker Techniker, der es liebt, Grenzen zu überschreiten und neue aufregende Dinge zu lernen. "</em>`);
+    this.getElById('trans17', `<em>" Seien wir realistisch, versuchen wir das Unmögliche. "</em>`);
     this.getElById('trans18', `Meine Reise begann`);
     this.getElById('trans19', `Schon während meiner Schulzeit habe ich erste Erfahrungen gemacht und mich schon sehr für Soft- und Hardware unterschiedlicher Elektronik interessiert.`);
     this.getElById('trans20', `Erster Kontakt`);
@@ -72,7 +72,7 @@ export class AppComponent {
     this.getElById('trans14', `Imprint`);
     this.getElById('trans15', `Privacy Policy`);
     this.getElById('about', `About me`);
-    this.getElById('trans17', `<em>" I am a passionate Frontend Developer with a background as an information electronics technician who loves pushing boundaries and learning new exciting things. "</em>`);
+    this.getElById('trans17', `<em>" Let's be realistic, try the impossible. "</em>`);
     this.getElById('trans18', `My Journey Began`);
     this.getElById('trans19', `When I was at school, I made my first experience and was already very interested in software and
     hardware of different kinds of electronics.`);
@@ -113,7 +113,7 @@ export class AppComponent {
     this.getElById('trans14', `Künye`);
     this.getElById('trans15', `Kişisel verilerin korunması`);
     this.getElById('about', `Hakkımda`);
-    this.getElById('trans17', `<em>" Bilgi elektroniği geçmişi olan tutkulu bir Frontend Developer'ım. Sınırları zorlamayı ve yeni heyecan verici şeyler öğrenmeyi seven teknisyen. "</em>`);
+    this.getElById('trans17', `<em>" Gerçekçi olalım ve imkansızı deneyelim. "</em>`);
     this.getElById('trans18', `Yolculuğum Başladı`);
     this.getElById('trans19', `Okuldayken ilk deneyimimi yaptım ve farklı elektronik türlerinin yazılım ve donanımına zaten çok ilgi duyuyordum.`);
     this.getElById('trans20', `İlk temas`);

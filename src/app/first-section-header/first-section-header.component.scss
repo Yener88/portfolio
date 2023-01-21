@@ -7,6 +7,9 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    @media (max-width: 1110px) {
+        justify-content: center;
+    }
 }
 
 .headerContent {
@@ -26,6 +29,7 @@ header {
     height: 100px;
     cursor: pointer;
     position: fixed;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;

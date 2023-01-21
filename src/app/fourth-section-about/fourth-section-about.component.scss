@@ -31,7 +31,7 @@
     @media (max-width: 1110px) {
         display: flex;
         flex-direction: column;
-        padding: 40px;
+        padding: 30px;
     }
 
     h1 {
@@ -39,6 +39,7 @@
     }
 
     span {
+        font-size: 18px;
         cursor: default;
     }
 
@@ -106,24 +107,3 @@
         padding-top: 20px;
     }
 }
-
-.sliderText {
-    height: 30%;
-    position: absolute;
-    transition: transform 225ms ease-in-out;
-    text-align: center;
-    width: 54%;
-    z-index: 5;
-    @media (max-width: 1110px) {
-        position: unset;
-    }
-}
-
-.slider-container {
-    width: 100%;
-    height: 100%;
-    position: none;
-    overflow: hidden;
-    z-index: 5;
-}
-
