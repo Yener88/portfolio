@@ -57,7 +57,7 @@
     object-fit: cover;
     opacity: 0.5;
     cursor: pointer;
-
+    transition: 225ms ease-in-out;
     @media (max-width: 1110px) {
         width: 150px;
         height: 150px;
@@ -172,7 +172,7 @@
     left: 385px;
     text-decoration: none;
     cursor: pointer !important;
-
+    transition: 225ms ease-in-out;
     @media (max-width: 1110px) {
         top: 372px;
         left: -50px;
@@ -181,6 +181,7 @@
     }
 
     &:hover {
-        opacity: 0.8;
+        color: #2dfcd8;
+        transition: 225ms ease-in-out;
     }
 }
