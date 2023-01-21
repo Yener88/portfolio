@@ -10,9 +10,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstSectionHeaderComponent implements OnInit {
 
-
-
-
   constructor() { }
 
   ngOnInit(): void {
