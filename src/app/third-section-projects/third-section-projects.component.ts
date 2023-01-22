@@ -11,5 +11,4 @@ export class ThirdSectionProjectsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

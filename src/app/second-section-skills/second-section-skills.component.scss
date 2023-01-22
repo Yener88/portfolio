@@ -1,7 +1,7 @@
 .secondSection {
     height: 940px;
-    background: linear-gradient(to bottom, #fa275813 0%, #2dfcd913 100%),
-        linear-gradient(to bottom, #8f8f8f 0%, #8f8f8f 100%);
+    background: linear-gradient(to bottom, hsla(346, 95%, 57%, 0.15) 0%, hsla(170, 97%, 58%, 0.25) 100%),
+    linear-gradient(to bottom, #cfcfcf 0%, #cfcfcf 100%);
     color: white;
     display: flex;
     justify-content: center;
@@ -21,6 +21,7 @@
         // justify-content: center;
         align-items: center;
     }
+    
     h1 {
         cursor: default;
     }
@@ -56,7 +57,7 @@ h1 {
     height: 180px;
     border-radius: 5px;
     position: relative;
-    top: -7px;
+    top: 20px;
     color: black;
     display: flex;
     align-items: center;
@@ -69,7 +70,7 @@ h1 {
     @media (max-width: 1060px) {
         width: 70px;
         height: 60px;
-        top: -17px;
+        top: 10px;
         left: 30px;
         align-items: flex-end;
         span {
@@ -77,7 +78,6 @@ h1 {
             font-weight: bold;
         }
     }
-
     &:hover {
         box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.45);
         transition: 225ms ease-in-out;
@@ -103,7 +103,7 @@ h1 {
     box-shadow: 0px 0px 4px 2px black;
     border-radius: 100%;
     position: relative;
-    top: 23px;
+    top: 30px;
     left: -170px;
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@ h1 {
         width: 50px;
         height: 50px;
         left: -30px;
-        top: -15px;
+        top: 5px;
         margin-top: 0px;
     }
 

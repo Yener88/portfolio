@@ -62,7 +62,7 @@ export class AppComponent {
     frontend develop<span style="color: #2dfcd8;">e</span>r`);
     this.getElById('trans5', `Technologies`);
     this.getElById('trans6', `Projects`);
-    this.getElById('trans7', `Download the Mobile Version(APK)`);
+    this.getElById('trans7', `Download the mobile Version(APK)`);
     this.getElById('trans8', `Contact me.`);
     this.getElById('trans9', `Get in touch via the form below, or by emailing <a href="mailto: yener.bas@outlook.de" style="color: #2dfcd8; text-decoration: none;">yener.bas@outlook.de</a>`);
     this.getElById('trans10', `Name`);
@@ -103,7 +103,7 @@ export class AppComponent {
     ben <span style="color: #fa2759;">Yener</span> Baş <br> frontend develop<span style="color: #2dfcd8;">e</span>r`);
     this.getElById('trans5', `Teknolojiler`);
     this.getElById('trans6', `Projeler`);
-    this.getElById('trans7', `Mobil Versiyonu İndir(APK)`);
+    this.getElById('trans7', `Mobil Versiyonu burda İndir(APK)`);
     this.getElById('trans8', `İletişime geçmek.`);
     this.getElById('trans9', `Aşağıdaki form aracılığıyla veya <a href="mailto: yener.bas@outlook.de" style="color: #2dfcd8; text-decoration: none;">yener.bas@outlook.de</a> adresine e-posta göndererek iletişime geçin`);
     this.getElById('trans10', `İsim`);

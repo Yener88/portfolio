@@ -1,7 +1,7 @@
 header {
     height: 100vh;
-    background: linear-gradient(to bottom, #2dfcd913 0%, #fa275813 100%),
-        linear-gradient(to bottom, #8f8f8f 0%, #8f8f8f 100%);
+    background: linear-gradient(to bottom, hsla(170, 97%, 58%, 0.25) 0%, hsla(346, 95%, 57%, 0.15) 100%),
+        linear-gradient(to bottom, #cfcfcf 0%, #cfcfcf 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -50,6 +50,7 @@ header {
         border-left: none;
         border-right: none;
     }
+    
     img {
         width: 45px;
         height: 50px;
@@ -99,6 +100,7 @@ header {
 .mobileNavbar {
     margin-right: 20px;
     margin-bottom: 40px;
+
     img {
         width: 40px;
         object-fit: contain;
@@ -144,6 +146,7 @@ header {
     align-items: center;
     padding-top: 50px;
     z-index: 0;
+
     a {
         color: white;
         text-decoration: none;
@@ -168,7 +171,6 @@ h1 {
     font-size: 64px;
     @media (max-width: 1110px) {
         font-size: 30px;
-
         margin-bottom: 30px;
     }
 }
@@ -211,10 +213,9 @@ h1 {
         border-top-left-radius: 40%;
         border-top-right-radius: 50%;
         border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 10%;
+        border-bottom-right-radius: 10%;
         object-fit: cover;
         margin-left: 30px;
-
         @media (max-width: 1110px) {
             width: 280px;
             height: 280px;
@@ -251,5 +252,18 @@ h1 {
     @media (max-width: 1110px) {
         top: 395px;
         width: 90vw;
+    }
+}
+
+.slide {
+    animation: slide 0.8s ease-out;
+    scroll-behavior: smooth;
+}
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
     }
 }
