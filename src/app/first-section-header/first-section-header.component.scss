@@ -257,7 +257,15 @@ h1 {
     cursor: pointer;
     transition: 225ms ease-in-out;
     border-radius: 100%;
-    z-index: 4;
+    z-index: 2;
+    object-fit: cover;
+    @media (max-width: 1110px) {
+        background-color: #2dfcd979;
+        &:hover {
+            background-color: #2dfcd900 !important;
+            transition: 225ms ease-in-out;
+        }
+    }
     img {
         width: 20px;
         height: 20px;
@@ -271,6 +279,5 @@ h1 {
     &:hover {
         background-color: #2dfcd8;
         transition: 225ms ease-in-out;
-        object-fit: cover;
     }
 }
