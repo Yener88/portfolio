@@ -21,6 +21,35 @@ export class FirstSectionHeaderComponent implements OnInit {
         })
       })(i);
     }
+
+    // Scroll funktion
+    var navbar = document.getElementById("navbar");
+    var lastScroll = 0;
+    var navbarHeight = window.getComputedStyle(navbar, null).getPropertyValue("height");
+
+    window.onscroll = function () {
+      var currentScroll = window.pageYOffset;
+      if (currentScroll > lastScroll) {
+        navbar.style.top = "-" + navbarHeight;
+      } else {
+        navbar.style.top = "0";
+      }
+      lastScroll = currentScroll;
+    }
+
+    // Scroll nach oben Buttton erscheint erst nach dem scrollen
+    const scrollButton = document.getElementById("scroll-button");
+    scrollButton.style.display = "none";
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 400) {
+        scrollButton.style.display = "block";
+      } else {
+        scrollButton.style.display = "none";
+      }
+    });
+    scrollButton.addEventListener("click", () => {
+      window.location.href = "#home";
+    });
   }
 
   // Open Mobile Navbar
@@ -44,4 +73,5 @@ export class FirstSectionHeaderComponent implements OnInit {
   openProjects() {
     this.closeMobileNavbar();
   }
+
 }

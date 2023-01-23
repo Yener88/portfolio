@@ -1,7 +1,7 @@
 <header id="home">
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <div>
-            <a href="#home">
+            <a href="location.reload()">
                 <img src="assets/img/logowhite.png" class="imgClickBlock" id="clickLogoStyle" alt="own made Logo">
             </a>
         </div>
@@ -13,6 +13,7 @@
         <div class="mobileNavbar hideDesktop">
             <img (click)="mobileNavbar()" src="assets/img/mobilemenu.png" alt="mobile navbar menü">
         </div>
+
         <div id="mobileNavbarContent" class="d-none hideDesktop">
             <span (click)="closeMobileNavbar()" class="closeMobileBtn">X</span>
             <a id="trans2" (click)="openProjects()" href="#projects">PROJECTS</a>
@@ -20,6 +21,7 @@
             <a id="trans3" (click)="openContact()" href="#contact">CONTACT</a>
         </div>
     </div>
+    <div id="scroll-button"><img src="assets/img/introbtn.png" alt="scroll back button"></div>
     <div class="headerContent">
         <div class="intro">
             <div class="introLeft" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1500">

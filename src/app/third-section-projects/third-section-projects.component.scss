@@ -39,9 +39,14 @@
 }
 
 .workAppStyleAhref {
-    margin: 20px;
-    width: 300px;
-    height: 300px;
+    img {
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        @media (max-width: 1110px) {
+
+        }
+    }
 }
 
 .workAppsStyle {
@@ -54,10 +59,11 @@
     z-index: 1;
     border-radius: 5px;
     @media (max-width: 1110px) {
-        opacity: 0.4;
+        opacity: 1;
         &:hover {
             opacity: 1 !important;
-            transform: scale(1) !important;
+            transform: none !important;
+            transition: none !important;
         }
     }
     &:hover {
@@ -83,8 +89,14 @@
     @media (max-width: 1110px) {
         z-index: 1;
         font-size: 36px;
-        left: 60px;
+        left: 20px;
         top: 20px;
+        background: #00000031;
+        width: 300px;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        pointer-events: none;
     }
 }
 
@@ -95,24 +107,36 @@
     left: 440px;
     font-size: 24px;
     @media (max-width: 1110px) {
-        top: 360px;
-        left: 60px;
+        top: 364px;
+        left: 20px;
         z-index: 1;
         font-size: 36px;
+        background: #00000031;
+        width: 300px;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        pointer-events: none;
     }
 }
 
 .workAppsTitle3 {
     color: white;
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: 90px;
     font-size: 24px;
     @media (max-width: 1110px) {
         z-index: 1;
         font-size: 36px;
-        left: 50px;
-        top: 18px;
+        left: 20px;
+        top: 20px;
+        background: #00000031;
+        width: 300px;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        pointer-events: none;
     }
 }
 
@@ -123,10 +147,16 @@
     left: 445px;
     font-size: 24px;
     @media (max-width: 1110px) {
-        top: 360px;
-        left: 75px;
+        top: 364px;
+        left: 20px;
         z-index: 1;
         font-size: 36px;
+        background: #00000031;
+        width: 300px;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        pointer-events: none;
     }
 }
 
@@ -138,8 +168,12 @@
     @media (max-width: 1110px) {
         z-index: 1;
         font-size: 20px;
-        left: 30px;
-        top: 70px;
+        left: 20px;
+        top: 64px;
+        background: rgba(0, 0, 0, 0.1921568627);
+        width: 300px;
+        text-align: center;
+        pointer-events: none;
     }
 }
 
@@ -151,7 +185,12 @@
     @media (max-width: 1110px) {
         z-index: 1;
         font-size: 20px;
-        left: 55px;
+        left: 20px;
+        background: #00000031;
+        width: 300px;
+        text-align: center;
+        top: 64px;
+        pointer-events: none;
     }
 }
 
@@ -161,10 +200,14 @@
     top: 60px;
     left: 400px;
     @media (max-width: 1110px) {
-        top: 410px;
-        left: 31px;
+        top: 408px;
+        left: 20px;
         z-index: 1;
         font-size: 20px;
+        background: #00000031;
+        width: 300px;
+        text-align: center;
+        pointer-events: none;
     }
 }
 
@@ -174,10 +217,14 @@
     top: 60px;
     left: 398px;
     @media (max-width: 1110px) {
-        top: 410px;
-        left: 25px;
+        top: 408px;
+        left: 20px;
         z-index: 1;
         font-size: 20px;
+        background: #00000031;
+        width: 300px;
+        text-align: center;
+        pointer-events: none;
     }
 }
 
@@ -193,9 +240,21 @@
     padding-right: 3px;
     @media (max-width: 1110px) {
         top: 636px;
-        left: 36px;
+        left: 20px;
         text-align: center;
-  font-weight: bold;
+        font-weight: bold;
+        z-index: 2;
+        width: 290px;
+        height: 23px;
+        padding-top: 2px;
+        border: 2px solid #fa2759;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        &:hover {
+            color: #2dfcd8;
+            transition: none !important;
+            transform: none !important;
+        }
     }
     &:hover {
         color: #2dfcd8;
@@ -212,10 +271,16 @@
     width: 250px;
     text-align: center;
     @media (max-width: 1110px) {
+        top: 88px;
+        left: 20px;
         z-index: 1;
-        top: 100px;
-        left: 42px;
         font-size: 20px;
+        background: rgba(0, 0, 0, 0.1921568627);
+        width: 300px;
+        height: 232px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        pointer-events: none;
     }
 }
 #workAppsDescrip2 {
@@ -226,10 +291,16 @@
     width: 250px;
     text-align: center;
     @media (max-width: 1110px) {
-        top: 445px;
-        left: 45px;
+        top: 432px;
+        left: 20px;
         z-index: 1;
         font-size: 20px;
+        background: #00000031;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 300px;
+        height: 232px;
+        pointer-events: none;
     }
 }
 #workAppsDescrip3 {
@@ -240,8 +311,16 @@
     width: 250px;
     text-align: center;
     @media (max-width: 1110px) {
+        top: 88px;
+        left: 20px;
         z-index: 1;
         font-size: 20px;
+        background: #00000031;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 300px;
+        height: 232px;
+        pointer-events: none;
     }
 }
 #workAppsDescrip4 {
@@ -252,9 +331,15 @@
     width: 250px;
     text-align: center;
     @media (max-width: 1110px) {
-        top: 445px;
-        left: 43px;
+        top: 432px;
+        left: 20px;
         z-index: 1;
         font-size: 20px;
+        background: #00000031;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 300px;
+        height: 232px;
+        pointer-events: none;
     }
 }
