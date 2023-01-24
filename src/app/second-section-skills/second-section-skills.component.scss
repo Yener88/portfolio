@@ -126,3 +126,9 @@ h1 {
         }
     }
 }
+
+h1 {
+    @media (max-width: 1110px) {
+        font-size: -webkit-xxx-large;
+    }
+}

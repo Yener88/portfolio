@@ -44,7 +44,7 @@
         width: 300px;
         height: 300px;
         @media (max-width: 1110px) {
-
+            width: 280px;
         }
     }
 }
@@ -88,11 +88,11 @@
     font-size: 24px;
     @media (max-width: 1110px) {
         z-index: 1;
-        font-size: 36px;
+        font-size: 30px;
         left: 20px;
         top: 20px;
         background: #00000050;
-        width: 300px;
+        width: 280px;
         text-align: center;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -110,9 +110,9 @@
         top: 364px;
         left: 20px;
         z-index: 1;
-        font-size: 36px;
+        font-size: 30px;
         background: #00000050;
-        width: 300px;
+        width: 280px;
         text-align: center;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -128,11 +128,11 @@
     font-size: 24px;
     @media (max-width: 1110px) {
         z-index: 1;
-        font-size: 36px;
+        font-size: 30px;
         left: 20px;
         top: 20px;
         background: #00000050;
-        width: 300px;
+        width: 280px;
         text-align: center;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -150,9 +150,9 @@
         top: 364px;
         left: 20px;
         z-index: 1;
-        font-size: 36px;
+        font-size: 30px;
         background: #00000050;
-        width: 300px;
+        width: 280px;
         text-align: center;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -167,13 +167,15 @@
     left: 55px;
     @media (max-width: 1110px) {
         z-index: 1;
-        font-size: 20px;
+        font-size: 16px;
         left: 20px;
-        top: 64px;
+        top: 56px;
         background: rgba(0, 0, 0, 0.1921568627);
-        width: 300px;
+        width: 260px;
         text-align: center;
         pointer-events: none;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -183,14 +185,16 @@
     top: 60px;
     left: 77px;
     @media (max-width: 1110px) {
-        z-index: 1;
-        font-size: 20px;
+        width: 260px;
+        top: 56px;
         left: 20px;
+        font-size: 18px;
         background: #00000050;
-        width: 300px;
         text-align: center;
-        top: 64px;
+        z-index: 1;
         pointer-events: none;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -200,14 +204,16 @@
     top: 60px;
     left: 400px;
     @media (max-width: 1110px) {
-        top: 408px;
+        top: 400px;
         left: 20px;
         z-index: 1;
-        font-size: 20px;
+        font-size: 16px;
         background: #00000050;
-        width: 300px;
+        width: 260px;
         text-align: center;
         pointer-events: none;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -217,14 +223,16 @@
     top: 60px;
     left: 398px;
     @media (max-width: 1110px) {
-        top: 408px;
+        top: 400px;
         left: 20px;
         z-index: 1;
-        font-size: 20px;
+        font-size: 16px;
         background: #00000050;
-        width: 300px;
+        width: 260px;
         text-align: center;
         pointer-events: none;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -244,7 +252,7 @@
         text-align: center;
         font-weight: bold;
         z-index: 2;
-        width: 290px;
+        width: 270px;
         height: 23px;
         padding-top: 2px;
         border: 2px solid #fa2759;
@@ -271,16 +279,18 @@
     width: 250px;
     text-align: center;
     @media (max-width: 1110px) {
-        top: 88px;
+        top: 76px;
         left: 20px;
         z-index: 1;
         font-size: 20px;
         background: rgba(0, 0, 0, 0.1921568627);
-        width: 300px;
-        height: 232px;
+        width: 240px;
+        height: 244px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         pointer-events: none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 #workAppsDescrip2 {
@@ -291,16 +301,18 @@
     width: 250px;
     text-align: center;
     @media (max-width: 1110px) {
-        top: 432px;
+        top: 420px;
         left: 20px;
         z-index: 1;
         font-size: 20px;
         background: #00000050;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        width: 300px;
-        height: 232px;
+        width: 240px;
+        height: 245px;
         pointer-events: none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 #workAppsDescrip3 {
@@ -311,18 +323,27 @@
     width: 250px;
     text-align: center;
     @media (max-width: 1110px) {
-        top: 88px;
+        top: 77px;
         left: 20px;
         z-index: 1;
         font-size: 20px;
         background: #00000050;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        width: 300px;
-        height: 232px;
+        width: 240px;
+        height: 243px;
         pointer-events: none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
+
+h1 {
+    @media (max-width: 1110px) {
+        font-size: -webkit-xxx-large;
+    }
+}
+
 #workAppsDescrip4 {
     color: white;
     position: absolute;
@@ -331,15 +352,17 @@
     width: 250px;
     text-align: center;
     @media (max-width: 1110px) {
-        top: 432px;
+        top: 420px;
         left: 20px;
         z-index: 1;
         font-size: 20px;
         background: #00000050;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        width: 300px;
-        height: 232px;
+        width: 240px;
+        height: 244px;
         pointer-events: none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
