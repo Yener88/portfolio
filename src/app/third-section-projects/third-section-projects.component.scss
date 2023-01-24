@@ -31,6 +31,10 @@
     a {
         display: inline-block;
         cursor: pointer;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
     }
 }
 
@@ -40,7 +44,6 @@
 
 .workAppStyleAhref {
     img {
-        margin: 20px;
         width: 300px;
         height: 300px;
         @media (max-width: 1110px) {
@@ -239,13 +242,16 @@
 .apkDownloadButton {
     color: white;
     position: absolute;
-    top: 292px;
-    left: 376px;
+    top: 264px;
+    left: 340px;
     cursor: pointer !important;
     transition: 225ms ease-in-out;
     text-decoration: none;
     padding-left: 3px;
     padding-right: 3px;
+    width: 294px !important;
+    height: 23px !important;
+    text-align: center;
     @media (max-width: 1110px) {
         top: 636px;
         left: 20px;
