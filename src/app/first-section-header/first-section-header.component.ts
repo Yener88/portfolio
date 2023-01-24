@@ -56,10 +56,12 @@ export class FirstSectionHeaderComponent implements OnInit {
   mobileNavbar() {
     document.getElementById('mobileNavbarContent').classList.add('slide');
     document.getElementById('mobileNavbarContent').classList.remove('d-none');
+    document.documentElement.style.setProperty('overflow-y', 'hidden');
   }
 
   closeMobileNavbar() {
     document.getElementById('mobileNavbarContent').classList.add('d-none');
+    document.documentElement.style.setProperty('overflow-y', 'auto');
   }
   // Close by Select Section in the menu to see the selected Section
   openContact() {
@@ -164,7 +166,7 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.getElById('workAppsDescrip4', `<br>The popular card game available in an online, desktop format, allowing multiple users to play on various devices simultaneously.`);
     this.getElById('trans30', `PROJECTS`);
     this.getElById('trans31', `ABOUT`);
-    this.getElById('trans32', `KONTAKT`);
+    this.getElById('trans32', `CONTACT`);
   }
 
   clickLanguageTR() {
