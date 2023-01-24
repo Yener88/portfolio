@@ -28,3 +28,7 @@ html {
 ::-webkit-scrollbar-thumb:active {
     background: rgba(45, 252, 217, 1);
 }
+
+::placeholder {
+    color: white;
+}
