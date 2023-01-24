@@ -36,8 +36,16 @@ export class FirstSectionHeaderComponent implements OnInit {
       }
       lastScroll = currentScroll;
     }
-
-    // Scroll nach oben Buttton erscheint erst nach dem scrollen
+    document.body.addEventListener("click", function (event) {
+      let target = event.target as HTMLElement;
+      if (target.classList.contains("clickNavbarIgnore")) {
+        event.stopPropagation();
+        return;
+      }
+      navbar.style.top = "0";
+    });
+    
+    // Scroll nach oben Button erscheint erst nach dem scrollen
     const scrollButton = document.getElementById("scroll-button");
     scrollButton.style.display = "none";
     window.addEventListener("scroll", () => {

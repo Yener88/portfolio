@@ -1,9 +1,9 @@
 <footer>
     <div class="footerContent">
         <div class="footerPos1">
-            <div (click)="openImprint()" id="trans14" class="footerLink">Imprint</div>
+            <div (click)="openImprint()" id="trans14" class="footerLink clickNavbarIgnore">Imprint</div>
             &nbsp;-&nbsp;
-            <div (click)="openPolicy()" id="trans15" class="footerLink">Legal Notice</div>
+            <div (click)="openPolicy()" id="trans15" class="footerLink clickNavbarIgnore">Legal Notice</div>
         </div>
         <div class="footerPos2">
             <a href="https://www.linkedin.com/in/yener-bas/" target="_blank"><img src="assets/img/footer_1.png"
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div id="imprint" class="d-none">
+    <div id="imprint" class="d-none clickNavbarIgnore">
         <button (click)="closeImprint()">x</button>
         <h1 id="trans26">Imprint</h1> <br>
         <br>
@@ -32,7 +32,7 @@
         <b id="trans29">CONTACT:</b><br>
         E-mail: <a href="mailto: yener.bas@outlook.de">yener.bas@outlook.de</a><br>
     </div>
-    <div id="policy" class="d-none">
+    <div id="policy" class="d-none clickNavbarIgnore">
         <button (click)="closePolicy()">x</button>
         <div class='impressum'>
             <h1>Privacy Policy</h1>
