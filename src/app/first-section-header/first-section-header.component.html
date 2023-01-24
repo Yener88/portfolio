@@ -2,10 +2,18 @@
     <div class="navbar" id="navbar">
         <div>
             <a href="#home">
-                <img src="assets/img/logowhite.png" class="imgClickBlock" id="clickLogoStyle" onClick="location.reload()" alt="own made Logo">
+                <img src="assets/img/logowhite.png" class="imgClickBlock" id="clickLogoStyle"
+                    onClick="location.reload()" alt="own made Logo">
             </a>
         </div>
         <div class="navbarLinks hideMobile">
+            <div id="transBtnPosition1">
+                <div id="transBtnPosition2">
+                    <img id="transEn" (click)="clickLanguageEN()" src="assets/img/england.png" alt="Flag England">
+                    <img id="transDe" (click)="clickLanguageDE()" src="assets/img/germany.png" alt="Flag Germany">
+                    <img id="transTr" (click)="clickLanguageTR()" src="assets/img/turkey.png" alt="Flag Turkey">
+                </div>
+            </div>
             <a id="trans2" href="#projects">PROJECTS</a>
             <a id="trans1" href="#about">ABOUT</a>
             <a id="trans3" href="#contact">CONTACT</a>
@@ -16,9 +24,22 @@
 
         <div id="mobileNavbarContent" class="d-none hideDesktop">
             <span (click)="closeMobileNavbar()" class="closeMobileBtn">X</span>
-            <a id="trans2" (click)="openProjects()" href="#projects">PROJECTS</a>
-            <a id="trans1" (click)="openAbout()" href="#about">ABOUT</a>
-            <a id="trans3" (click)="openContact()" href="#contact">CONTACT</a>
+            <a id="trans30" (click)="openProjects()" href="#projects">
+                PROJECTS
+            </a>
+            <a id="trans31" (click)="openAbout()" href="#about">
+                ABOUT
+            </a>
+            <a id="trans32" (click)="openContact()" href="#contact">
+                CONTACT
+            </a>
+            <div id="transBtnPosition1">
+                <div id="transBtnPosition2">
+                    <img id="transEn" (click)="clickLanguageEN()" src="assets/img/england.png" alt="Flag England">
+                    <img id="transDe" (click)="clickLanguageDE()" src="assets/img/germany.png" alt="Flag Germany">
+                    <img id="transTr" (click)="clickLanguageTR()" src="assets/img/turkey.png" alt="Flag Turkey">
+                </div>
+            </div>
         </div>
     </div>
     <div id="scroll-button"><img src="assets/img/introbtn.png" alt="scroll back button"></div>

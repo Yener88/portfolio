@@ -1,7 +1,7 @@
 header {
     height: 100vh;
     background: linear-gradient(to bottom, hsla(170, 97%, 58%, 0.25) 0%, hsla(346, 95%, 57%, 0.15) 100%),
-        linear-gradient(to bottom, #cfcfcf 0%, #cfcfcf 100%);
+        linear-gradient(to bottom, #8b8b8b 0%, #8b8b8b 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -62,8 +62,6 @@ header {
         }
         @media (max-width: 1110px) {
             width: 55px;
-            margin-left: 20px;
-            margin-right: 3px;
             margin-top: 45px;
         }
     }
@@ -77,6 +75,7 @@ header {
         width: 70px !important;
         height: 45px !important;
         margin-bottom: 50px !important;
+        margin-left: 10px !important;
     }
 }
 
@@ -260,11 +259,7 @@ h1 {
     z-index: 2;
     object-fit: cover;
     @media (max-width: 1110px) {
-        background-color: #2dfcd979;
-        &:hover {
-            background-color: #2dfcd900 !important;
-            transition: 225ms ease-in-out;
-        }
+        display: none !important;
     }
     img {
         width: 20px;
@@ -279,5 +274,50 @@ h1 {
     &:hover {
         background-color: #2dfcd8;
         transition: 225ms ease-in-out;
+    }
+}
+
+#transBtnPosition1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 25px;
+    left: 180px;
+    z-index: 1;
+    
+    @media (max-width: 1110px) {
+        position: unset;
+        left: -55px;
+        bottom: 200px;
+        padding-top: 50px;
+    }
+}
+
+#transBtnPosition2 {
+    cursor: pointer;
+    padding: 10px;
+    @media (max-width: 1110px) {
+        border-top: 1px solid #2dfcd8;
+    }
+}
+
+#transDe,
+#transEn,
+#transTr {
+    width: 35px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-right: 5px;
+    &:hover {
+        opacity: 0.4;
+    }
+    @media (max-width: 1110px) {
+        width: 60px;
+        height: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
