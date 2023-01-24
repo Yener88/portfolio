@@ -110,7 +110,7 @@
     left: 440px;
     font-size: 24px;
     @media (max-width: 1110px) {
-        top: 364px;
+        top: 360px;
         left: 20px;
         z-index: 1;
         font-size: 30px;
@@ -150,7 +150,7 @@
     left: 445px;
     font-size: 24px;
     @media (max-width: 1110px) {
-        top: 364px;
+        top: 360px;
         left: 20px;
         z-index: 1;
         font-size: 30px;
@@ -207,7 +207,7 @@
     top: 60px;
     left: 400px;
     @media (max-width: 1110px) {
-        top: 400px;
+        top: 396px;
         left: 20px;
         z-index: 1;
         font-size: 16px;
@@ -226,7 +226,7 @@
     top: 60px;
     left: 398px;
     @media (max-width: 1110px) {
-        top: 400px;
+        top: 396px;
         left: 20px;
         z-index: 1;
         font-size: 16px;
@@ -253,13 +253,12 @@
     height: 23px !important;
     text-align: center;
     @media (max-width: 1110px) {
-        top: 636px;
-        left: 20px;
+        top: 611px;
+        left: 0px;
         text-align: center;
         font-weight: bold;
         z-index: 2;
-        width: 270px;
-        height: 23px;
+        width: 270px!important;
         padding-top: 2px;
         border: 2px solid #fa2759;
         border-bottom-right-radius: 5px;
@@ -307,7 +306,7 @@
     width: 250px;
     text-align: center;
     @media (max-width: 1110px) {
-        top: 420px;
+        top: 416px;
         left: 20px;
         z-index: 1;
         font-size: 20px;
@@ -358,7 +357,7 @@ h1 {
     width: 250px;
     text-align: center;
     @media (max-width: 1110px) {
-        top: 420px;
+        top: 416px;
         left: 20px;
         z-index: 1;
         font-size: 20px;
