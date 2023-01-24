@@ -27,7 +27,10 @@
 
 .workApps {
     padding: 50px;
-
+    @media (max-width: 1110px) {
+        margin-top: -40px;
+        margin-left: 20px;
+    }
     a {
         display: inline-block;
         cursor: pointer;
@@ -258,7 +261,7 @@
         text-align: center;
         font-weight: bold;
         z-index: 2;
-        width: 270px!important;
+        width: 270px !important;
         padding-top: 2px;
         border: 2px solid #fa2759;
         border-bottom-right-radius: 5px;
