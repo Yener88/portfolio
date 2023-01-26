@@ -27,6 +27,7 @@
     text-align: center;
     border-bottom: 1px solid #2dfcd8;
     padding: 100px;
+    cursor: default;
     @media (max-width: 1110px) {
         display: flex;
         flex-direction: column;
@@ -99,6 +100,7 @@
     color: white;
     padding-top: 30px;
     top: 2775px;
+    cursor: default;
     @media (max-width: 1110px) {
         width: 100%;
         text-align: center;
