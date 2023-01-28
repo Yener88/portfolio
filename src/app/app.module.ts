@@ -14,6 +14,7 @@ import { ThirdSectionProjectsComponent } from './third-section-projects/third-se
 import { FourthSectionAboutComponent } from './fourth-section-about/fourth-section-about.component';
 import { FifthSectionContactComponent } from './fifth-section-contact/fifth-section-contact.component';
 import { SixthSectionFooterComponent } from './sixth-section-footer/sixth-section-footer.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SixthSectionFooterComponent } from './sixth-section-footer/sixth-sectio
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    RouterModule
   ],
   bootstrap: [AppComponent]
 })

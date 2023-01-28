@@ -2,8 +2,8 @@
     <div class="navbar" id="navbar">
         <div>
             <a href="#home">
-                <img src="assets/img/logowhite.png"
-                    class="imgClickBlock" id="clickLogoStyle" onClick="location.reload()" alt="own made Logo">
+                <img src="assets/img/logowhite.png" class="imgClickBlock" id="clickLogoStyle"
+                    onClick="location.reload()" alt="own made Logo">
             </a>
         </div>
         <div class="navbarLinks hideMobile">
@@ -14,24 +14,34 @@
                     <img id="transTr" (click)="clickLanguageTR()" src="assets/img/turkey.png" alt="Flag Turkey">
                 </div>
             </div>
-            <a id="trans2" href="#projects">PROJECTS</a>
-            <a id="trans1" href="#about">ABOUT</a>
-            <a id="trans3" href="#contact">CONTACT</a>
+
+            <a id="trans1" href="#about">About me</a>
+            <a id="trans3" href="#skills">Skills</a>
+            <a id="trans2" href="#projects">Portfolio</a>
         </div>
         <div class="mobileNavbar hideDesktop">
             <img (click)="mobileNavbar()" src="assets/img/mobilemenu.png" alt="mobile navbar menü">
         </div>
 
+
+
         <div id="mobileNavbarContent" class="d-none hideDesktop">
-            <span (click)="closeMobileNavbar()" class="closeMobileBtn">X</span>
-            <a id="trans30" (click)="openProjects()" href="#projects">
-                PROJECTS
-            </a>
+
+            <!-- <span (click)="closeMobileNavbar()" class="closeMobileBtn"><img src="assets/img/mobilemenu.png"
+                    alt="mobile navbar menü"></span> -->
+
             <a id="trans31" (click)="openAbout()" href="#about">
-                ABOUT
+                About me
             </a>
+            <a id="trans30-1" (click)="openSkills()" href="#skills">
+                Skills
+            </a>
+            <a id="trans30" (click)="openProjects()" href="#projects">
+                Portfolio
+            </a>
+
             <a id="trans32" (click)="openContact()" href="#contact">
-                CONTACT
+                Contact
             </a>
             <div id="transBtnPosition1">
                 <div id="transBtnPosition2">
@@ -41,27 +51,58 @@
                 </div>
             </div>
         </div>
+
+
+
     </div>
     <div id="scroll-button"><img src="assets/img/introbtn.png" alt="scroll back button"></div>
     <div class="headerContent">
         <div class="intro">
             <div class="introLeft" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1500">
-                <h1 id="trans4">
-                    Hi, <br>
-                    I'm <span class="introStyle1">Yener</span> Bas <br>
-                    frontend develop<span class="introStyle2">e</span>r
-                </h1>
+                <div class="introLeftTitle">
+                    <span class="introLeftTitleStyle1" id="trans4-1">I am</span>
+                    <span class="introLeftTitleStyle2">Yener Bas</span> <br>
+                    <span class="introLeftTitleStyle3" id="trans4-2">FRONTEND DEVELOPER</span>
+                </div>
             </div>
             <div class="introRight" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
                 data-aos-duration="1500">
-                <img src="assets/img/selfpicture1.jpg" alt="Self Picture">
+                <!-- <img src="assets/img/selfpicture1-removebg.png" alt="Self Picture"> -->
             </div>
         </div>
-        <div id="pngUnderline" class="hideMobile"></div>
+        <a href="#contact" class="contactBtn">
+            <button data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+                <span id="trans5">Let's talk!</span>
+        
+            </button>
+        </a>
+        <div class="borderLinkContainer">
+            <div class="borderLinkContainerBorder"></div>
+            <div class="borderLinkContainerIcons">
+                <a href="https://github.com/Yener88" target="_blank">
+                    <img src="assets/img/borderLinkContainerIcons1.png" alt="Github Icon">
+                </a>
+                <a href="mailto:yener.bas@outlook.de">
+                    <img src="assets/img/borderLinkContainerIcons2.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/yener-bas/" target="_blank">
+                    <img src="assets/img/borderLinkContainerIcons3.png" alt="">
+                </a>
+
+            </div>
+        </div>
+
     </div>
-    <div>
+    <div class="introScrollPosition hideMobile">
         <a href="#skills" class="introScroll">
+            <span class="introScrollText" id="trans6">Scroll down</span>
             <img src="assets/img/introbtn.png" alt="intro button">
         </a>
     </div>
+
+    <div class="BackgroundContainer">
+        <div class="blurOne"> <img src="assets/img/blur1.png"></div>
+        <div class="blurFour"> <img src="assets/img/blur4.png"></div>
+    </div>
+
 </header>

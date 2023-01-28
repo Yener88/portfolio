@@ -1,10 +1,16 @@
 <footer>
     <div class="footerContent">
         <div class="footerPos1">
-            <div (click)="openImprint()" id="trans14" class="footerLink clickNavbarIgnore">Imprint</div>
-            &nbsp;-&nbsp;
-            <div (click)="openPolicy()" id="trans15" class="footerLink clickNavbarIgnore">Legal Notice</div>
+            <img src="assets/img/logowhite.png" class="imgClickBlock" id="clickLogoStyle" onClick="location.reload()"
+                alt="own made Logo">
+            <div (click)="openPolicy()" class="footerLink clickNavbarIgnore">
+                <span id="trans27">
+                    Imprint
+                </span>
+
+            </div>
         </div>
+        <div class="copyrightText">&copy;&nbsp;Yener Bas 2022</div>
         <div class="footerPos2">
             <a href="https://www.linkedin.com/in/yener-bas/" target="_blank"><img src="assets/img/footer_1.png"
                     alt="logo footer 1"></a>
@@ -16,7 +22,10 @@
     </div>
 
     <div id="imprint" class="d-none clickNavbarIgnore">
-        <button (click)="closeImprint()">x</button>
+
+    </div>
+    <div id="policy" class="d-none clickNavbarIgnore">
+        <button (click)="closePolicy()">x</button>
         <h1 id="trans26">Imprint</h1> <br>
         <br>
         <span id="trans27">ACCORDING TO § 5 TMG</span>
@@ -30,10 +39,7 @@
         Yener Bas<br>
         <br>
         <b id="trans29">CONTACT:</b><br>
-        E-mail: <a href="mailto: yener.bas@outlook.de">yener.bas@outlook.de</a><br>
-    </div>
-    <div id="policy" class="d-none clickNavbarIgnore">
-        <button (click)="closePolicy()">x</button>
+        E-mail: <a href="mailto: yener.bas@outlook.de">yener.bas@outlook.de</a><br><br><br><br><br>
         <div class='impressum'>
             <h1>Privacy Policy</h1>
             <p>Last updated: June 26, 2022</p>

@@ -31,8 +31,10 @@ export class FirstSectionHeaderComponent implements OnInit {
       var currentScroll = window.pageYOffset;
       if (currentScroll > lastScroll) {
         navbar.style.top = "-" + navbarHeight;
+        navbar.style.boxShadow = ('none');
       } else {
         navbar.style.top = "0";
+        navbar.style.boxShadow = ('0px 4px 4px rgba(0, 0, 0, 0.25)');
       }
       lastScroll = currentScroll;
     }
@@ -43,8 +45,9 @@ export class FirstSectionHeaderComponent implements OnInit {
         return;
       }
       navbar.style.top = "0";
+      navbar.style.boxShadow = ('0px 4px 4px rgba(0, 0, 0, 0.25)');
     });
-    
+
     // Scroll nach oben Button erscheint erst nach dem scrollen
     const scrollButton = document.getElementById("scroll-button");
     scrollButton.style.display = "none";
@@ -61,7 +64,17 @@ export class FirstSectionHeaderComponent implements OnInit {
   }
 
   // Open Mobile Navbar
+  private isNavbarOpen = false;
   mobileNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
+    if (this.isNavbarOpen) {
+      this.openMobileNavbar();
+    } else {
+      this.closeMobileNavbar();
+    }
+  }
+
+  openMobileNavbar() {
     document.getElementById('mobileNavbarContent').classList.add('slide');
     document.getElementById('mobileNavbarContent').classList.remove('d-none');
     document.documentElement.style.setProperty('overflow-y', 'hidden');
@@ -71,6 +84,7 @@ export class FirstSectionHeaderComponent implements OnInit {
     document.getElementById('mobileNavbarContent').classList.add('d-none');
     document.documentElement.style.setProperty('overflow-y', 'auto');
   }
+
   // Close by Select Section in the menu to see the selected Section
   openContact() {
     this.closeMobileNavbar();
@@ -84,140 +98,124 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.closeMobileNavbar();
   }
 
+  openSkills() {
+    this.closeMobileNavbar();
+  }
+
   getElById(id: any, text: any) {      // this.getElById('trans',``);
     document.getElementById(id).innerHTML = `${text}`;;
   }
+  
   // ''''''''''''''''TRANSLATE FUNCTION''''''''''''''''
   clickLanguageDE() {
-    this.getElById('trans1', `ÜBER MICH`);
-    this.getElById('trans2', `PROJEKTE`);
-    this.getElById('trans3', `KONTAKT`);
-    this.getElById('trans4', `Hallo, <br>
-    ich bin <span style="color: #fa2759;">Yener</span> Bas <br>
-    Frontend Entwickl<span style="color: #2dfcd8;">e</span>r`);
-    this.getElById('trans5', `Technologien`);
-    this.getElById('trans6', `Projekte`);
-    this.getElById('trans7', `Laden Sie die mobile Version(APK)`);
-    this.getElById('trans8', `Kontaktformular`);
-    this.getElById('trans9', `Kontaktieren Sie uns über das untenstehende Formular oder per E-Mail an <a href="mailto: yener.bas@outlook.de" style="color: #2dfcd8; text-decoration: none;">yener.bas@outlook.de</a>`);
-    this.getElById('trans10', `Name`);
-    this.getElById('trans11', `E-Mail Adresse`);
-    this.getElById('trans12', `Nachricht`);
-    this.getElById('trans13', `Senden`);
-    this.getElById('trans14', `Impressum`);
-    this.getElById('trans15', `Datenschutz`);
-    this.getElById('about', `Über mich`);
-    this.getElById('trans17', `<em>" Die wahre Großzügigkeit der Zukunft gegenüber besteht darin, in der Gegenwart alles zu geben. "</em>`);
-    this.getElById('trans18', `Meine Reise begann`);
-    this.getElById('trans19', `" Schon während meiner Schulzeit habe ich erste Erfahrungen gemacht und mich schon sehr für Soft- und Hardware unterschiedlicher Elektronik interessiert. "`);
-    this.getElById('trans20', `Erster Kontakt`);
-    this.getElById('trans21', `" Mit 15 Jahren programmierte ich meine erste Homepage, die wie ein Social-Media-Profil über mich auf Basis von HTML/CSS aufgebaut war. "`);
-    this.getElById('trans22', `IT-Erfahrung`);
-    this.getElById('trans23', `" Nach der Schule habe ich eine Ausbildung zum Informationselektroniker absolviert und insgesamt rund 9 Jahre Berufserfahrung gesammelt. "`);
-    this.getElById('trans24', `Frontend Entwickler`);
-    this.getElById('trans25', `" Um meine Leidenschaft zum Beruf zu machen, habe ich im August 2022 den Intensivkurs an der Developer Academy absolviert. "`);
-    this.getElById('trans26', `Impressum`);
-    this.getElById('trans27', `NACH § 5 TMG`);
-    this.getElById('trans28', `VERTRETEN DURCH`);
-    this.getElById('trans29', `KONTAKT:`);
-    document.getElementById('name').setAttribute('placeholder', 'Gebe deinen Namen ein');
-    document.getElementById('message').setAttribute('placeholder', 'Gebe deine E-Mail Adresse ein');
-    document.getElementById('email').setAttribute('placeholder', 'Gebe hier deine Nachricht ein');
-    this.getElById('workAppsDescrip1', `<br>Das Index der Pokemon, das auf API basierte Pokedex! Mit umfangreichen Details und erweiterten Funktionen wie in der Suche alle Pokemon zu finden, zu favorisieren und zu verwalten.`);
-    this.getElById('workAppsDescrip2', `<br>El Pollo Loco ist ein humorvolles Jump-and-Run-Spiel, das mit objektorientiertem JavaScript erstellt wurde und als Einführung in die Angular-Entwicklung dient.`);
-    this.getElById('workAppsDescrip3', `<br>Team Table ist ein Tool, mit dem Sie Ihre Arbeit organisieren und effizienter gestalten können, ähnlich einem Kanban-Board.`);
-    this.getElById('workAppsDescrip4', `<br>Das beliebte Kartenspiel, das in einem Online-Desktop-Format verfügbar ist und es mehreren Benutzern ermöglicht, gleichzeitig auf verschiedenen Geräten zu spielen.`);
-    this.getElById('trans30', `PROJEKTE`);
-    this.getElById('trans31', `ÜBER MICH`);
-    this.getElById('trans32', `KONTAKT`);
+    this.getElById('trans1', `Über mich`);
+    this.getElById('trans2', `Portfolio`);
+    this.getElById('trans3', `Skills`);
+    this.getElById('trans4-1', `Ich bin`);
+    this.getElById('trans4-2', `FRONTEND ENTWICKLER`);
+    this.getElById('trans5', `Schreib mir!`);
+    this.getElById('trans6', `Scroll runter`);
+    this.getElById('trans7', `Über mich`);
+    this.getElById('trans8', `Hallo, ich bin ein Frontend-Entwickler aus Köln, Deutschland. Nach der Schule habe ich eine Ausbildung im IT-Bereich absolviert und insgesamt etwa 8 Jahre Berufserfahrung gesammelt. Um meine Leidenschaft zum Beruf zu machen, habe ich im August 2022 den Intensivkurs an der Developer Academy absolviert.`);
+    this.getElById('trans9', `Als ich noch in der Schule war, hatte ich meine ersten Erfahrungen gemacht und war bereits sehr an verschiedenen Arten von Software und Hardware von Elektronikgeräten interessiert.`);
+    this.getElById('trans10', `Mit 15 Jahren programmierte ich meine erste Homepage, die wie ein soziales Medienprofil über mich aufgebaut war, basierend auf HTML/CSS.`);
+    this.getElById('trans11', `Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.`);
+    this.getElById('trans12', `In Kontakt treten`);
+    this.getElById('trans13', `Diese Seite ist eine Beispiel meiner Arbeit! Scrollen Sie nach unten, um andere von mir entwickelte Projekte anzusehen.`);
+    this.getElById('trans14', `Das Index der Pokemon, das auf API basierte Pokedex! Mit umfangreichen Details und erweiterten Funktionen wie in der Suche alle Pokemon zu finden, zu favorisieren und zu verwalten.`);
+    this.getElById('trans15', `Laden Sie die mobile Version(APK)`);
+    this.getElById('trans16', `El Pollo Loco ist ein humorvolles Jump-and-Run-Spiel, das mit objektorientiertem JavaScript erstellt wurde und als Einführung in die Angular-Entwicklung dient.`);
+    this.getElById('trans17', `Team Table ist ein Tool, mit dem Sie Ihre Arbeit organisieren und effizienter gestalten können, ähnlich einem Kanban-Board.`);
+    this.getElById('trans18', `Das beliebte Kartenspiel, das in einem Online-Desktop-Format verfügbar ist und es mehreren Benutzern ermöglicht, gleichzeitig auf verschiedenen Geräten zu spielen.`);
+    this.getElById('trans19', `Live-Test`);
+    this.getElById('trans20', `Live-Test`);
+    this.getElById('trans21', `Live-Test`);
+    this.getElById('trans22', `Live-Test`);
+    this.getElById('trans23', `Portfolio`);
+    this.getElById('trans24', `Willst du ein Problem lösen?`);
+    this.getElById('trans25', `Kontaktieren Sie mich über dieses Formular, ich bin an Ihren Ideen interessiert und möchte Ihnen mit meiner Arbeit zu Ihren Projekten beitragen.
+    <br><br>
+    Brauchen Sie einen Frontend-Entwickler? <a href="mailto:yener.bas@outlook.de" style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;">Kontaktieren Sie mich!</a>`);
+    document.getElementById('name').setAttribute('placeholder', 'Dein Namen');
+    document.getElementById('message').setAttribute('placeholder', 'Deine E-Mail Adresse');
+    document.getElementById('email').setAttribute('placeholder', 'Deine Nachricht');
+    this.getElById('trans26', `Kontakt`);
+    this.getElById('trans27', `Impressum`);
+    this.getElById('trans28', `Senden :)`);
   }
 
   clickLanguageEN() {
-    this.getElById('trans1', `ABOUT`);
-    this.getElById('trans2', `PROJECTS`);
-    this.getElById('trans3', `CONTACT`);
-    this.getElById('trans4', `Hi, <br>
-    i'm <span style="color: #fa2759;">Yener</span> Bas <br>
-    frontend develop<span style="color: #2dfcd8;">e</span>r`);
-    this.getElById('trans5', `Technologies`);
-    this.getElById('trans6', `Projects`);
-    this.getElById('trans7', `Download the mobile Version(APK)`);
-    this.getElById('trans8', `Contact me.`);
-    this.getElById('trans9', `Get in touch via the form below, or by emailing <a href="mailto: yener.bas@outlook.de" style="color: #2dfcd8; text-decoration: none;">yener.bas@outlook.de</a>`);
-    this.getElById('trans10', `Name`);
-    this.getElById('trans11', `E-mail address`);
-    this.getElById('trans12', `Message`);
-    this.getElById('trans13', `Send`);
-    this.getElById('trans14', `Imprint`);
-    this.getElById('trans15', `Privacy Policy`);
-    this.getElById('about', `About me`);
-    this.getElById('trans17', `<em>" Real generosity toward the future lies in giving all to the present. "</em>`);
-    this.getElById('trans18', `My Journey Began`);
-    this.getElById('trans19', `" When I was at school, I made my first experience and was already very interested in software and
-    hardware of different kinds of electronics. "`);
-    this.getElById('trans20', `First Contact`);
-    this.getElById('trans21', `" At the age of 15, I programmed my first homepage which was built like a social media profile about myself based on HTML/CSS. "`);
-    this.getElById('trans22', `IT Experience`);
-    this.getElById('trans23', `" After school, I completed an apprenticeship in IT and gained a total of around 8 years of professional experience. "`);
-    this.getElById('trans24', `Software Engineer`);
-    this.getElById('trans25', `" To turn my passion into a profession, I completed the intensive course at the Developer Academy in August 2022. "`);
-    this.getElById('trans26', `Imprint`);
-    this.getElById('trans27', `ACCORDING TO § 5 TMG`);
-    this.getElById('trans28', `REPRESENTED BY:`);
-    this.getElById('trans29', `CONTACT:`);
-    document.getElementById('name').setAttribute('placeholder', 'Enter your name');
-    document.getElementById('message').setAttribute('placeholder', 'Enter your E-mail address');
-    document.getElementById('email').setAttribute('placeholder', 'Enter your message');
-    this.getElById('workAppsDescrip1', `<br>Index of Pokemon, API based Pokedex! With extensive details and advanced functions such as finding, favorite and managing all Pokemon in the search.`);
-    this.getElById('workAppsDescrip2', `<br>El Pollo Loco is a humorous jump-and-run game created using object-oriented JavaScript and serving as an introduction to Angular development.`);
-    this.getElById('workAppsDescrip3', `<br>Team Table is a tool used to organize and improve the efficiency of your work, similar to a Kanban Board.`);
-    this.getElById('workAppsDescrip4', `<br>The popular card game available in an online, desktop format, allowing multiple users to play on various devices simultaneously.`);
-    this.getElById('trans30', `PROJECTS`);
-    this.getElById('trans31', `ABOUT`);
-    this.getElById('trans32', `CONTACT`);
+    this.getElById('trans1', `About me`);
+    this.getElById('trans2', `Portfolio`);
+    this.getElById('trans3', `Skills`);
+    this.getElById('trans4-1', `I am`);
+    this.getElById('trans4-2', `FRONTEND DEVELOPER`);
+    this.getElById('trans5', `Let's talk!`);
+    this.getElById('trans6', `Scroll down`);
+    this.getElById('trans7', `About me`);
+    this.getElById('trans8', `Hi, I am a Frontend developer based in Cologne, Germany. After school, I completed an apprenticeship in IT and gained a total of around 8 years of professional experience. To turn my passion into a profession, I completed the intensive course at the Developer Academy in August 2022.`);
+    this.getElById('trans9', `When I was at school, I made my first experience and was already very interested in software and hardware of different kinds of electronics.`);
+    this.getElById('trans10', `At the age of 15, I programmed my first homepage which was built like a social media profile about myself based on HTML/CSS.`);
+    this.getElById('trans11', `I have gained experience in building projects with various frontend technologies and concepts.`);
+    this.getElById('trans12', `Get in touch`);
+    this.getElById('trans13', `This page is a sample of my work! Scroll down to view other projects i have developed.`);
+    this.getElById('trans14', `Index of Pokemon, API based Pokedex! With extensive details and advanced functions such as finding, favorite and managing all Pokemon in the search.`);
+    this.getElById('trans15', `Download the mobile Version(APK)`);
+    this.getElById('trans16', `El Pollo Loco is a humorous jump-and-run game created using object-oriented JavaScript and serving as an introduction to Angular development.`);
+    this.getElById('trans17', `Team Table is a tool used to organize and improve the efficiency of your work, similar
+    to a Kanban Board.`);
+    this.getElById('trans18', `The popular card game available in an online, desktop format, allowing multiple users to play on various devices simultaneously.`);
+    this.getElById('trans19', `Live test`);
+    this.getElById('trans20', `Live test`);
+    this.getElById('trans21', `Live test`);
+    this.getElById('trans22', `Live test`);
+    this.getElById('trans23', `Portfolio`);
+    this.getElById('trans24', `Got a problem to solve?`);
+    this.getElById('trans25', `Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.
+    <br><br>
+    Need a Frontend developer?<a href="mailto:yener.bas@outlook.de" style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;">Contact me!</a>`);
+    document.getElementById('name').setAttribute('placeholder', 'Your name');
+    document.getElementById('message').setAttribute('placeholder', 'Your E-mail address');
+    document.getElementById('email').setAttribute('placeholder', 'Your message');
+    this.getElById('trans26', `Contact`);
+    this.getElById('trans27', `Imprint`);
+    this.getElById('trans28', `Send :)`);
   }
 
   clickLanguageTR() {
-    this.getElById('trans1', `HAKKIMDA`);
-    this.getElById('trans2', `PROJELER`);
-    this.getElById('trans3', `İLETİŞİM`);
-    this.getElById('trans4', `Merhaba, <br>
-    ben <span style="color: #fa2759;">Yener</span> Baş <br> frontend develop<span style="color: #2dfcd8;">e</span>r`);
-    this.getElById('trans5', `Teknolojiler`);
-    this.getElById('trans6', `Projeler`);
-    this.getElById('trans7', `Mobil Versiyonu burda İndir(APK)`);
-    this.getElById('trans8', `İletişime geçmek.`);
-    this.getElById('trans9', `Aşağıdaki form aracılığıyla veya <a href="mailto: yener.bas@outlook.de" style="color: #2dfcd8; text-decoration: none;">yener.bas@outlook.de</a> adresine e-posta göndererek iletişime geçin`);
-    this.getElById('trans10', `İsim`);
-    this.getElById('trans11', `E-posta adresi`);
-    this.getElById('trans12', `Mesaj`);
-    this.getElById('trans13', `Gönder`);
-    this.getElById('trans14', `Künye`);
-    this.getElById('trans15', `Kişisel verilerin korunması`);
-    this.getElById('about', `Hakkımda`);
-    this.getElById('trans17', `<em>" 
-    Geleceğe yönelik gerçek cömertlik, her şeyinizi şimdiki zamanda vermektir. "</em>`);
-    this.getElById('trans18', `Yolculuğum Başladı`);
-    this.getElById('trans19', `" Okuldayken ilk deneyimimi yaptım ve farklı elektronik türlerinin yazılım ve donanımına zaten çok ilgi duyuyordum. "`);
-    this.getElById('trans20', `İlk temas`);
-    this.getElById('trans21', `" 15 yaşında, kendimle ilgili bir sosyal medya profili gibi oluşturulmuş ilk ana sayfamı HTML/CSS tabanlı olarak programladım. "`);
-    this.getElById('trans22', `BT Deneyimi`);
-    this.getElById('trans23', `" Okuldan sonra BT alanında çıraklık yaptım ve toplamda yaklaşık 8 yıllık mesleki deneyim kazandım. "`);
-    this.getElById('trans24', `Yazılım Mühendisi`);
-    this.getElById('trans25', `" Tutkumu mesleğe dönüştürmek için Developer Academy'de yoğun kursu Ağustos 2022'de tamamladım. "`);
-    this.getElById('trans26', `Künye`);
-    this.getElById('trans27', `§ 5 TMG'YE GÖRE`);
-    this.getElById('trans28', `İLE TEMSİL EDİLEN`);
-    this.getElById('trans29', `TEMAS:`);
-    document.getElementById('name').setAttribute('placeholder', 'Adınızı giriniz');
-    document.getElementById('message').setAttribute('placeholder', 'E-posta adresinizi giriniz');
-    document.getElementById('email').setAttribute('placeholder', 'Mesajınızı buraya girin');
-    this.getElById('workAppsDescrip1', `<br>Pokemon Endeksi, API tabanlı Pokedex! Aramada tüm Pokemon'u bulma, favorilere ekleme ve yönetme gibi kapsamlı ayrıntılar ve gelişmiş işlevlerle.`);
-    this.getElById('workAppsDescrip2', `<br>El Pollo Loco, nesne yönelimli JavaScript kullanılarak oluşturulan ve Angular geliştirmeye giriş işlevi gören komik bir zıpla ve koş oyunudur.`);
-    this.getElById('workAppsDescrip3', `<br>Team Table, işinizi organize etmeniz ve verimliliğinizi arttırmak için kullanabileceğiniz bir araçtır, Kanban Board benzeri.`);
-    this.getElById('workAppsDescrip4', `<br>Çevrimiçi, masaüstü biçiminde sunulan ve birden çok kullanıcının aynı anda çeşitli cihazlarda oynamasına olanak tanıyan popüler kart oyunu.`);
-    this.getElById('trans30', `PROJELER`);
-    this.getElById('trans31', `HAKKIMDA`);
-    this.getElById('trans32', `İLETİŞİM`);
+    this.getElById('trans1', `Hakkimda`);
+    this.getElById('trans2', `Portföy`);
+    this.getElById('trans3', `Beceriler`);
+    this.getElById('trans4-1', `ben`);
+    this.getElById('trans4-2', `FRONTEND DEVELOPER`);
+    this.getElById('trans5', `Konuşalım!`);
+    this.getElById('trans6', `Aşağı kaydır`);
+    this.getElById('trans7', `Hakkımda`);
+    this.getElById('trans8', `Merhaba, Köln, Almanya'da yerleşik bir Frontend geliştiriciyim. Okuldan sonra, IT alanında bir eğitim aldım ve toplamda yaklaşık 8 yıl profesyonel deneyim kazandım. Tutkumu meslek haline getirmek için, Ağustos 2022'de Developer Academy'de yoğun bir kursu tamamladım.`);
+    this.getElById('trans9', `Okul sırasında, ilk deneyimlerimi yaptım ve farklı türlerdeki elektronik cihazların yazılımı ve donanımına çok ilgi duyuyordum.`);
+    this.getElById('trans10', `15 yaşında, HTML/CSS temelinde kendim hakkında bir sosyal medya profili gibi inşa edilmiş ilk web sayfamı programladım.`);
+    this.getElById('trans11', `Çeşitli frontend teknolojileri ve kavramları ile projelerin inşa etmekte deneyim kazandım.`);
+    this.getElById('trans12', `İletişim kurmak`);
+    this.getElById('trans13', `Bu sayfa işlerimin bir örneğidir! Diğer geliştirdiğim projeleri görmek için aşağı kaydırın.`);
+    this.getElById('trans14', `Pokemon Endeksi, API tabanlı Pokedex! Aramada tüm Pokemon'u bulma, favorilere ekleme ve yönetme gibi kapsamlı ayrıntılar ve gelişmiş işlevlerle.`);
+    this.getElById('trans15', `Mobil Versiyonu burda İndir(APK)`);
+    this.getElById('trans16', `El Pollo Loco, nesne yönelimli JavaScript kullanılarak oluşturulan ve Angular geliştirmeye giriş işlevi gören komik bir zıpla ve koş oyunudur.`);
+    this.getElById('trans17', `Team Table, işinizi organize etmeniz ve verimliliğinizi arttırmak için kullanabileceğiniz bir araçtır, Kanban Board benzeri.`);
+    this.getElById('trans18', `Çevrimiçi, masaüstü biçiminde sunulan ve birden çok kullanıcının aynı anda çeşitli cihazlarda oynamasına olanak tanıyan popüler kart oyunu.`);
+    this.getElById('trans19', `Canlı test`);
+    this.getElById('trans20', `Canlı test`);
+    this.getElById('trans21', `Canlı test`);
+    this.getElById('trans22', `Canlı test`);
+    this.getElById('trans23', `Portföy`);
+    this.getElById('trans24', `Çözülecek bir sorunun var mı?`);
+    this.getElById('trans25', `Bu form aracılığıyla bana ulaşın, fikirlerinizi duymak, bilmek ve projelerinize çalışmam ile katkıda bulunmak ilgileniyorum.
+    <br><br>
+    Bir frontend geliştiricisi mi lazım? <a href="mailto:yener.bas@outlook.de" style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;">Benimle iletişime geçin!</a>`);
+    document.getElementById('name').setAttribute('placeholder', 'Adınız');
+    document.getElementById('message').setAttribute('placeholder', 'E-posta adresiniz');
+    document.getElementById('email').setAttribute('placeholder', 'buraya Mesajınızı yazın');
+    this.getElById('trans26', `İletişim`);
+    this.getElById('trans27', `Künye`);
+    this.getElById('trans28', `Gönder :)`);
   }
 }
