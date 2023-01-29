@@ -107,8 +107,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "portfolio:build:production",
-            "firebaseProject": "portfolio-73a24",
-            "firebaseHostingSite": "portfolio-73a24"
+            "firebaseProject": "portfolio-cdcbb",
+            "firebaseHostingSite": "portfolio-cdcbb"
           }
         }
       }

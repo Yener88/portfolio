@@ -6,9 +6,16 @@
           "portfolio-73a24"
         ]
       }
+    },
+    "portfolio-cdcbb": {
+      "hosting": {
+        "portfolio": [
+          "portfolio-cdcbb"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "portfolio-73a24"
+    "default": "portfolio-cdcbb"
   }
 }
