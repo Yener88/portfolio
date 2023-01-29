@@ -103,7 +103,7 @@ export class FirstSectionHeaderComponent implements OnInit {
   }
 
   getElById(id: any, text: any) {      // this.getElById('trans',``);
-    document.getElementById(id).innerHTML = `${text}`;;
+    document.getElementById(id).innerHTML = `${text}`;
   }
   
   // ''''''''''''''''TRANSLATE FUNCTION''''''''''''''''
@@ -123,7 +123,7 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.getElById('trans12', `In Kontakt treten`);
     this.getElById('trans13', `Diese Seite ist eine Beispiel meiner Arbeit! Scrollen Sie nach unten, um andere von mir entwickelte Projekte anzusehen.`);
     this.getElById('trans14', `Das Index der Pokemon, das auf API basierte Pokedex! Mit umfangreichen Details und erweiterten Funktionen wie in der Suche alle Pokemon zu finden, zu favorisieren und zu verwalten.`);
-    this.getElById('trans15', `Laden Sie die mobile Version(APK)`);
+
     this.getElById('trans16', `El Pollo Loco ist ein humorvolles Jump-and-Run-Spiel, das mit objektorientiertem JavaScript erstellt wurde und als Einführung in die Angular-Entwicklung dient.`);
     this.getElById('trans17', `Team Table ist ein Tool, mit dem Sie Ihre Arbeit organisieren und effizienter gestalten können, ähnlich einem Kanban-Board.`);
     this.getElById('trans18', `Das beliebte Kartenspiel, das in einem Online-Desktop-Format verfügbar ist und es mehreren Benutzern ermöglicht, gleichzeitig auf verschiedenen Geräten zu spielen.`);
@@ -142,6 +142,7 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.getElById('trans26', `Kontakt`);
     this.getElById('trans27', `Impressum`);
     this.getElById('trans28', `Senden :)`);
+    this.getElById('trans29', `Yener Bas`);
   }
 
   clickLanguageEN() {
@@ -160,7 +161,6 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.getElById('trans12', `Get in touch`);
     this.getElById('trans13', `This page is a sample of my work! Scroll down to view other projects i have developed.`);
     this.getElById('trans14', `Index of Pokemon, API based Pokedex! With extensive details and advanced functions such as finding, favorite and managing all Pokemon in the search.`);
-    this.getElById('trans15', `Download the mobile Version(APK)`);
     this.getElById('trans16', `El Pollo Loco is a humorous jump-and-run game created using object-oriented JavaScript and serving as an introduction to Angular development.`);
     this.getElById('trans17', `Team Table is a tool used to organize and improve the efficiency of your work, similar
     to a Kanban Board.`);
@@ -180,6 +180,7 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.getElById('trans26', `Contact`);
     this.getElById('trans27', `Imprint`);
     this.getElById('trans28', `Send :)`);
+    this.getElById('trans29', `Yener Bas`);
   }
 
   clickLanguageTR() {
@@ -198,7 +199,6 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.getElById('trans12', `İletişim kurmak`);
     this.getElById('trans13', `Bu sayfa işlerimin bir örneğidir! Diğer geliştirdiğim projeleri görmek için aşağı kaydırın.`);
     this.getElById('trans14', `Pokemon Endeksi, API tabanlı Pokedex! Aramada tüm Pokemon'u bulma, favorilere ekleme ve yönetme gibi kapsamlı ayrıntılar ve gelişmiş işlevlerle.`);
-    this.getElById('trans15', `Mobil Versiyonu burda İndir(APK)`);
     this.getElById('trans16', `El Pollo Loco, nesne yönelimli JavaScript kullanılarak oluşturulan ve Angular geliştirmeye giriş işlevi gören komik bir zıpla ve koş oyunudur.`);
     this.getElById('trans17', `Team Table, işinizi organize etmeniz ve verimliliğinizi arttırmak için kullanabileceğiniz bir araçtır, Kanban Board benzeri.`);
     this.getElById('trans18', `Çevrimiçi, masaüstü biçiminde sunulan ve birden çok kullanıcının aynı anda çeşitli cihazlarda oynamasına olanak tanıyan popüler kart oyunu.`);
@@ -217,5 +217,7 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.getElById('trans26', `İletişim`);
     this.getElById('trans27', `Künye`);
     this.getElById('trans28', `Gönder :)`);
+    this.getElById('trans29', `Yener Baş`);
+
   }
 }

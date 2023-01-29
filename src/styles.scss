@@ -18,16 +18,17 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: linear-gradient(to bottom, #4d0000b4 0%, #0000009c 100%);
+    background-color: #141d2f;
+
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: rgba(45, 252, 217, 0.6);
+    background: #3c5791;
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background: rgba(45, 252, 217, 1);
+    background: #3c5791;
 }
 
 ::placeholder {

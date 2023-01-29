@@ -95,8 +95,8 @@ header {
     }
 
     img {
-        width: 45px;
-        height: 50px;
+        width: 30px;
+        height: auto;
         transition: transform 0.5s ease-in-out;
         @media (max-width: 1110px) {
             width: 55px;
@@ -142,7 +142,7 @@ header {
             color: #fa2759;
             transition: 300ms ease-in-out;
         }
-        &:hover::before {   
+        &:hover::before {
             width: 100%;
         }
         &::before {
@@ -176,7 +176,6 @@ header {
         width: 0;
     }
 }
-
 
 .mobileNavbar {
     margin-right: 20px;
@@ -376,10 +375,10 @@ h1 {
     position: absolute;
     display: flex;
     align-items: center;
-    bottom: 25px;
-    left: 500px;
+    bottom: 16px;
+    left: 130px;
     z-index: 1;
-
+    color: #e86f00;
     @media (max-width: 1110px) {
         position: unset;
         left: -55px;
@@ -391,6 +390,7 @@ h1 {
 #transBtnPosition2 {
     cursor: pointer;
     padding: 10px;
+    display: flex;
     @media (max-width: 1110px) {
         border-top: 1px solid #2dfcd8;
     }
@@ -545,4 +545,14 @@ h1 {
             transition: 225ms ease-in-out;
         }
     }
+}
+
+.languagebtn {
+    padding-left: 30px;
+}
+
+.logoSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
