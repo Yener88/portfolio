@@ -74,6 +74,24 @@ export class FirstSectionHeaderComponent implements OnInit {
     }
   }
 
+  private isLanguageOpen = false;
+  openLanguage() {
+    this.isLanguageOpen = !this.isLanguageOpen;
+    if (this.isLanguageOpen) {
+      this.openLanguageSection();
+    } else {
+      this.closeLanguageSection();
+    }
+  }
+
+  openLanguageSection() {
+    document.getElementById('languagebtn').classList.remove('d-none');
+  }
+
+  closeLanguageSection() {
+    document.getElementById('languagebtn').classList.add('d-none');
+  }
+
   openMobileNavbar() {
     document.getElementById('mobileNavbarContent').classList.add('slide');
     document.getElementById('mobileNavbarContent').classList.remove('d-none');
@@ -101,6 +119,8 @@ export class FirstSectionHeaderComponent implements OnInit {
   openSkills() {
     this.closeMobileNavbar();
   }
+
+
 
   getElById(id: any, text: any) {      // this.getElById('trans',``);
     document.getElementById(id).innerHTML = `${text}`;

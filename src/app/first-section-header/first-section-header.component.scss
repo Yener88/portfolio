@@ -392,7 +392,7 @@ h1 {
     padding: 10px;
     display: flex;
     @media (max-width: 1110px) {
-        border-top: 1px solid #2dfcd8;
+        border-top: 4px solid #141d2f;
     }
 }
 
@@ -420,7 +420,7 @@ h1 {
 // ############### BACKGROUND BLUR ###############
 
 .BackgroundContainer {
-    z-index: 0;
+    z-index: 2;
 }
 
 .blurOne {
@@ -455,6 +455,17 @@ h1 {
             width: auto;
             height: 300px;
         }
+    }
+}
+
+.blurEight {
+    pointer-events: none;
+    position: absolute;
+    left: -141px;
+    top: 2253px;
+    img {
+        width: auto;
+        height: 608px;
     }
 }
 

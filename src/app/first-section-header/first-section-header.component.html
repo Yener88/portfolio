@@ -5,21 +5,23 @@
                 <img src="assets/img/logowhite.png" class="imgClickBlock" id="clickLogoStyle"
                     onClick="location.reload()" alt="own made Logo">
             </a>
-            <div>
-                <img class="languagebtn" src="assets/img/languagebtn.png" alt="language Icon">
+            <div class="hideMobile">
+                <img class="languagebtn" (click)="openLanguage()" src="assets/img/languagebtn.png" alt="language Icon">
             </div>
-            <div id="transBtnPosition1 hideMobile">
-                <div id="transBtnPosition2">
-                    <img id="transEn" (click)="clickLanguageEN()" src="assets/img/england.png" alt="Flag England">
-                    <img id="transDe" (click)="clickLanguageDE()" src="assets/img/germany.png" alt="Flag Germany">
-                    <img id="transTr" (click)="clickLanguageTR()" src="assets/img/turkey.png" alt="Flag Turkey">
+            <div class="hideMobile">
+                <div id="transBtnPosition1" id="languagebtn" class="d-none">
+                    <div id="transBtnPosition2">
+                        <img id="transEn" (click)="clickLanguageEN()" src="assets/img/england.png" alt="Flag England">
+                        <img id="transDe" (click)="clickLanguageDE()" src="assets/img/germany.png" alt="Flag Germany">
+                        <img id="transTr" (click)="clickLanguageTR()" src="assets/img/turkey.png" alt="Flag Turkey">
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="navbarLinks hideMobile" data-aos="fade-left" data-aos-easing="ease-in-sine"
             data-aos-duration="1500">
-            
+
             <a id="trans1" href="#about">About me</a>
             <a id="trans3" href="#skills">Skills</a>
             <a id="trans2" href="#projects">Portfolio</a>
@@ -104,6 +106,8 @@
     <div class="BackgroundContainer">
         <div class="blurOne"> <img src="assets/img/blur1.png"></div>
         <div class="blurFour"> <img src="assets/img/blur4.png"></div>
+        <div class="blurEight"> <img src="assets/img/blur8.png"></div>
+
     </div>
 
 </header>
