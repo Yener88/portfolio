@@ -12,6 +12,7 @@ footer {
 
 .footerContent {
     z-index: 1;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,6 +23,7 @@ footer {
         justify-content: start;
         align-items: center;
         width: 100%;
+        overflow: hidden;
     }
 
     img {
