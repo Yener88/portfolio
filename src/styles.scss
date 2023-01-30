@@ -4,6 +4,9 @@ body {
     font-family: "Poppins";
     font-style: normal;
     overflow-x: hidden;
+    @media (max-width: 1130px) {
+        overflow-y: auto;
+    }
 }
 
 .site-wrapper {

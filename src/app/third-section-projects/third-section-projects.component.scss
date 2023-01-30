@@ -21,7 +21,6 @@
     }
 }
 
-
 .borderLinkContainer {
     position: absolute;
     bottom: -1980px;
@@ -70,6 +69,9 @@
         border-top-right-radius: 5px;
         border-bottom-right-radius: none;
         border-bottom-left-radius: 5px;
+        @media (max-width: 1100px) {
+            width: 56px;
+        }
     }
     @media (max-width: 1100px) {
         display: flex;
@@ -77,9 +79,6 @@
         flex-direction: column;
         padding-top: 93px;
         align-items: center;
-        a {
-            height: unset;
-        }
     }
 }
 
@@ -128,6 +127,9 @@
     font-size: 28px;
     line-height: 120%;
     text-align: center;
+    @media (max-width: 1100px) {
+        font-size: 22px;
+    }
 }
 
 .workAppsSkills {
@@ -136,6 +138,9 @@
     font-size: 20px;
     line-height: 120%;
     text-align: center;
+    @media (max-width: 1100px) {
+        font-size: 16px;
+    }
 }
 
 #workAppsDescrip {
@@ -144,6 +149,9 @@
     font-size: 20px;
     line-height: 120%;
     text-align: center;
+    @media (max-width: 1100px) {
+        font-size: 16px;
+    }
 }
 
 .apkDownloadButton {
@@ -167,6 +175,57 @@
     &:hover {
         opacity: 1 !important;
         transition: 225ms ease-in-out;
+    }
+    @media (max-width: 1100px) {
+        top: 25px;
+        left: 172px;
+        height: 26px !important;
+        width: 153px !important;
+        border-top-right-radius: 0px !important;
+        font-size: 18px;
+    }
+    @media (max-width: 360px) {
+        left: 127px;
+        font-size: 16px;
+        width: 118px !important;
+    }
+}
+
+.mobileBorder {
+    @media (max-width: 1100px) {
+        border-bottom-left-radius: 0px !important;
+    }
+}
+
+.mobileBg1 {
+    @media (max-width: 1100px) {
+        background-image: url("../../assets/img/mobilescreenpokemon.jpg");
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.mobileBg2 {
+    @media (max-width: 1100px) {
+        background-image: url("../../assets/img/mobilescreenpolo.jpg");
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.mobileBg3 {
+    @media (max-width: 1100px) {
+        background-image: url("../../assets/img/mobilescreenkanban.jpg");
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.mobileBg4 {
+    @media (max-width: 1100px) {
+        background-image: url("../../assets/img/mobilescreenfire.jpg");
+        background-position: center;
+        background-size: contain;
     }
 }
 
@@ -193,6 +252,9 @@
         height: 340px;
         position: relative;
     }
+    @media (max-width: 360px) {
+        width: 260px;
+    }
 }
 
 .hoverTextPosition2,
@@ -213,6 +275,9 @@
         height: 340px;
         position: relative;
     }
+    @media (max-width: 360px) {
+        width: 260px;
+    }
 }
 
 .workAppsHoverTextContainer {
@@ -229,7 +294,10 @@
     flex-direction: column;
     justify-content: center;
     @media (max-width: 1100px) {
-        height: 235px;
+        height: 160px;
+    }
+    @media (max-width: 360px) {
+        height: 195px;
     }
 }
 
@@ -271,6 +339,13 @@
         cursor: pointer;
         transition: 225ms ease-in-out;
         padding-left: 12px;
+        @media (max-width: 360px) {
+            font-size: 16px;
+            padding-left: 6px;
+        }
+    }
+    @media (max-width: 360px) {
+        width: 56px;
     }
 }
 
@@ -309,6 +384,12 @@
         line-height: 19.2px;
         cursor: pointer;
         transition: 225ms ease-in-out;
+        @media (max-width: 360px) {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 360px) {
+        width: 120px !important;
     }
 }
 

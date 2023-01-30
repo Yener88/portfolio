@@ -11,13 +11,12 @@ header {
 .headerContent {
     z-index: 1;
     max-width: 1100px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     @media (max-width: 1130px) {
         width: 110%;
-        height: 40vh;
-        
+        height: 40%;
         margin-left: 35px;
     }
 
