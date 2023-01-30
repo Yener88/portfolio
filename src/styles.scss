@@ -8,7 +8,11 @@ body {
         overflow-y: auto;
     }
 }
-
+// @media (max-width: 1130px) {
+//     [data-aos] {
+//         pointer-events: auto !important;
+//     }
+// }
 .site-wrapper {
     @media (max-width: 1130px) {
         overflow-x: hidden;

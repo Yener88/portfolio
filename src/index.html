@@ -26,10 +26,18 @@
     <app-root></app-root>
   </div>
 
-
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+   if (window.innerWidth <= 1130) {
+      AOS.init({
+        disable: true,
+      });
+    } else {
+      AOS.init({
+        offset: 0,
+        duration: 400,
+      });
+    }
   </script>
 </body>
 

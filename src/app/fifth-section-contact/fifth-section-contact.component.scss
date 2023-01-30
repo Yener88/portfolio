@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: flex-end;
     @media (max-width: 1130px) {
+        height: 900px;
     }
 }
 
@@ -164,7 +165,7 @@ h1 {
     width: 600px;
     height: 100px;
     @media (max-width: 1130px) {
-        bottom: -3713px;
+        bottom: 975px;
     }
 }
 
@@ -185,7 +186,7 @@ h1 {
     display: flex;
     align-items: center;
     @media (max-width: 1130px) {
-        bottom: -3645px;
+        bottom: 1040px;
     }
 }
 
@@ -217,6 +218,9 @@ h1 {
     @media (max-width: 1130px) {
         font-size: 23px;
     }
+    @media (max-width: 475px) {
+        padding-left: 15px;
+    }
 }
 
 .fifthSectionDescripText {
@@ -227,14 +231,20 @@ h1 {
     line-height: 120%;
     position: absolute;
     bottom: -3910px;
-    left: 115px;
+    left: 95px;
     width: 39%;
     color: white;
     max-width: 463px;
     width: 100%;
     cursor: default;
     @media (max-width: 1130px) {
-        bottom: -3785px;
+        bottom: 900px;
+    }
+    @media (max-width: 1130px) {
+        width: 367px;
+    }
+    @media (max-width: 475px) {
+        left: 65px;
     }
 }
 

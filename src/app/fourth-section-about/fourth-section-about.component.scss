@@ -9,6 +9,9 @@
     @media (max-width: 1130px) {
         height: 1010px;
     }
+    @media (max-width: 420px) {
+        height: 1067px;
+    }
 }
 
 .fourthSectionContent {
@@ -50,7 +53,7 @@
     @media (max-width: 1130px) {
         width: unset;
         position: absolute;
-        top: 977px;
+        top: 1052px;
 
         img {
             width: 300px;
@@ -178,7 +181,40 @@
         width: 100%;
         height: 100%;
         @media (max-width: 1130px) {
-            bottom: -1104px;
+            bottom: 1198px;
+            object-fit: contain;
+        }
+        @media (max-width: 1085px) {
+            bottom: 1349px;
+
+        }
+        @media (max-width: 1000px) {
+            bottom: 1369px;
+
+        }
+        @media (max-width: 900px) {
+            bottom: 1380px;
+
+        }
+        @media (max-width: 830px) {
+            bottom: 1403px;
+
+        }
+        @media (max-width: 715px) {
+            bottom: 1422px;
+
+        }
+        @media (max-width: 610px) {
+            bottom: 1440px;
+
+        }
+        @media (max-width: 510px) {
+            bottom: 1459px;
+
+        }
+        @media (max-width: 400px) {
+            bottom: 1477px;
+
         }
     }
 }

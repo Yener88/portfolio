@@ -139,23 +139,23 @@ export class FirstSectionHeaderComponent implements OnInit {
 
 
 
-  private isLanguageOpen = false;
-  openLanguage() {
-    this.isLanguageOpen = !this.isLanguageOpen;
-    if (this.isLanguageOpen) {
-      this.openLanguageSection();
-    } else {
-      this.closeLanguageSection();
-    }
-  }
+  // private isLanguageOpen = false;
+  // openLanguage() {
+  //   this.isLanguageOpen = !this.isLanguageOpen;
+  //   if (this.isLanguageOpen) {
+  //     this.openLanguageSection();
+  //   } else {
+  //     this.closeLanguageSection();
+  //   }
+  // }
 
-  openLanguageSection() {
-    document.getElementById('languagebtn').classList.remove('d-none');
-  }
+  // openLanguageSection() {
+  //   document.getElementById('languagebtn').classList.remove('d-none');
+  // }
 
-  closeLanguageSection() {
-    document.getElementById('languagebtn').classList.add('d-none');
-  }
+  // closeLanguageSection() {
+  //   document.getElementById('languagebtn').classList.add('d-none');
+  // }
 
 
   openContact() {
