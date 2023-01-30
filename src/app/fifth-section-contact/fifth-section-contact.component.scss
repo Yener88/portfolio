@@ -177,6 +177,9 @@ h1 {
     @media (max-width: 1130px) {
         width: 40px;
     }
+    @media (max-width: 350px) {
+        width: 20px;
+    }
 }
 
 .borderLinkContainer2 {
@@ -197,6 +200,9 @@ h1 {
     width: 390px;
     @media (max-width: 1130px) {
         width: 60px;
+    }
+    @media (max-width: 350px) {
+        width: 40px;
     }
 }
 .fifthSectionDescripForm {
@@ -220,6 +226,9 @@ h1 {
     }
     @media (max-width: 475px) {
         padding-left: 15px;
+    }
+    @media (max-width: 450px) {
+        font-size: 19px;
     }
 }
 
@@ -245,6 +254,15 @@ h1 {
     }
     @media (max-width: 475px) {
         left: 65px;
+    }
+    @media (max-width: 450px) {
+        left: 59px;
+        width: 280px;
+        bottom: 857px;
+    }
+    @media (max-width: 350px) {
+        left: 38px;
+        width: 237px;
     }
 }
 
@@ -273,4 +291,7 @@ h1 {
     @media (max-width: 1130px) {
         font-size: 45px;
     }
+@media (max-width: 350px) {
+    margin-right: 25px;
+}
 }
