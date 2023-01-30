@@ -217,6 +217,10 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.getElById('trans27', `Impressum`);
     this.getElById('trans28', `Senden :)`);
     this.getElById('trans29', `Yener Bas`);
+    this.getElById('trans30', `Über mich`);
+    this.getElById('trans31', `Skills`);
+    this.getElById('trans32', `Portfolio`);
+    this.getElById('trans33', `Kontakt`);
   }
 
   clickLanguageEN() {
@@ -255,6 +259,10 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.getElById('trans27', `Imprint`);
     this.getElById('trans28', `Send :)`);
     this.getElById('trans29', `Yener Bas`);
+    this.getElById('trans30', `About me`);
+    this.getElById('trans31', `Skills`);
+    this.getElById('trans32', `Portfolio`);
+    this.getElById('trans33', `Contact`);
   }
 
   clickLanguageTR() {
@@ -292,6 +300,9 @@ export class FirstSectionHeaderComponent implements OnInit {
     this.getElById('trans27', `Künye`);
     this.getElById('trans28', `Gönder :)`);
     this.getElById('trans29', `Yener Baş`);
-
+    this.getElById('trans30', `Hakkimda`);
+    this.getElById('trans31', `Beceriler`);
+    this.getElById('trans32', `Portföy`);
+    this.getElById('trans33', `İletişim`);
   }
 }
