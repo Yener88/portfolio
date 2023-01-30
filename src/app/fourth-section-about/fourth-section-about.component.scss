@@ -7,6 +7,7 @@
     flex-direction: column;
     color: white;
     @media (max-width: 1110px) {
+        height: 1010px;
     }
 }
 
@@ -20,14 +21,23 @@
     padding-top: 253px;
     align-items: flex-end;
     @media (max-width: 1110px) {
-        width: 100%;
-        overflow: hidden;
     }
 }
 
 .fourthSectionContentLeft {
     width: 45%;
     padding-bottom: 115px;
+    @media (max-width: 1110px) {
+        position: absolute;
+        top: 1350px;
+        z-index: 2;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
 
 .fourthSectionContentRight {
@@ -38,12 +48,25 @@
         margin-bottom: -25px;
         margin-left: 60px;
     }
+    @media (max-width: 1110px) {
+        width: unset;
+        position: absolute;
+        top: 977px;
+        
+        img {
+            width: 400px;
+            margin-left: 0px;
+        }
+    }
 }
 
 .aboutmeText1 {
     font-size: 90px;
     font-weight: 700;
     line-height: 120%;
+    @media (max-width: 1110px) {
+        font-size: 70px;
+    }
 }
 
 .aboutmeText2 {
@@ -51,6 +74,9 @@
     font-weight: 300;
     line-height: 120%;
     margin-top: 30px;
+    @media (max-width: 1110px) {
+    width: 400px;
+    }
 }
 
 .aboutmeText3 {
@@ -75,6 +101,9 @@
         justify-content: center;
         width: 96px;
     }
+    @media (max-width: 1110px) {
+        width: 400px;
+        }
 }
 
 .aboutmeText4 {
@@ -99,17 +128,21 @@
         justify-content: center;
         width: 96px;
     }
+    @media (max-width: 1110px) {
+        width: 400px;
+        }
 }
 
 .BackgroundContainer {
     z-index: -1;
+    overflow: hidden;
 }
 
 .blurTwo {
     pointer-events: none;
     position: absolute;
-    bottom: -900px;
-    right: 22vw;
+    bottom: -639px;
+    right: 39vw;
     img {
         width: auto;
         height: 608px;
@@ -119,8 +152,8 @@
 .blurThree {
     pointer-events: none;
     position: absolute;
-    bottom: -900px;
-    right: 12vw;
+    bottom: -630px;
+    right: 16vw;
     transform: rotate(90deg);
     img {
         width: auto;
@@ -136,5 +169,9 @@
         left: 0px;
         width: 100%;
         height: 100%;
+        @media (max-width: 1110px) {
+            bottom: -1104px;
+        }
     }
+    
 }

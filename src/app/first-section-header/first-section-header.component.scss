@@ -35,7 +35,7 @@ header {
         position: absolute;
         width: 198px;
         height: 58px;
-        bottom: 32%;
+        top: 60%;
         cursor: pointer;
         color: white;
         font-family: "Poppins";
@@ -43,25 +43,28 @@ header {
         font-weight: 400;
         font-size: 23px;
         line-height: 120%;
-        left: 610px;
+        left: 45vw;
         @media (max-width: 1110px) {
             margin-right: 35px;
             width: 123px;
             height: 40px;
+            top: 40%;
+            left: 43vw;
             font-size: 14px;
-            font-weight: 100;
+            font-weight: 300;
+        }
+        @media (max-width: 380px) {
+            left: 35vw;
+
         }
     }
 }
 
-.contactBtn {
-    padding-right: 200px;
-    transition: 225ms ease-in-out;
-    &:hover {
-        opacity: 0.8;
-        transition: 225ms ease-in-out;
-    }
+
+.d-none {
+    display: none !important;
 }
+// ##################### NAVBAR #####################
 
 .navbar {
     max-width: 1100px;
@@ -103,6 +106,12 @@ header {
             margin-top: 45px;
         }
     }
+}
+
+.logoSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #clickLogoStyle {
@@ -215,10 +224,6 @@ header {
     }
 }
 
-.d-none {
-    display: none !important;
-}
-
 #mobileNavbarContent {
     position: fixed;
     top: 0px;
@@ -243,6 +248,37 @@ header {
     }
 }
 
+.slideNavbarOpen {
+    animation: slideNavbarOpen 0.8s ease-out;
+    scroll-behavior: smooth;
+}
+
+@keyframes slideNavbarOpen {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideNavbarClose {
+    animation: slideNavbarClose 0.8s ease-out;
+    scroll-behavior: smooth;
+}
+
+@keyframes slideNavbarClose {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+// ##################### NAVBAR #####################
+// ##################### MAIN CONTENT #####################
+
 .intro {
     display: flex;
     justify-content: space-between;
@@ -255,22 +291,6 @@ header {
     }
 }
 
-h1 {
-    font-size: 64px;
-    @media (max-width: 1110px) {
-        font-size: 34px;
-        margin-bottom: 30px;
-        margin-left: 5px;
-    }
-}
-
-.introStyle1 {
-    color: #fa2759;
-}
-
-.introStyle2 {
-    color: #2dfcd8;
-}
 
 .introLeft {
     cursor: default;
@@ -324,23 +344,14 @@ h1 {
         transition: 225ms ease-in-out;
     }
 }
+
 .introScrollText {
     transform: rotate(90deg);
     width: 143px;
     height: 34px;
 }
-.slide {
-    animation: slide 0.8s ease-out;
-    scroll-behavior: smooth;
-}
-@keyframes slide {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
+
+
 
 #scroll-button {
     position: fixed;
@@ -369,107 +380,6 @@ h1 {
         transition: 225ms ease-in-out;
     }
 }
-// ###############   ###############
-// ############### TRANSLATE FUNCTION ###############
-#transBtnPosition1 {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    bottom: 16px;
-    left: 130px;
-    z-index: 1;
-    color: #e86f00;
-    @media (max-width: 1110px) {
-        position: unset;
-        left: -55px;
-        bottom: 200px;
-        padding-top: 50px;
-    }
-}
-
-#transBtnPosition2 {
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    @media (max-width: 1110px) {
-        border-top: 4px solid #141d2f;
-    }
-}
-
-#transDe,
-#transEn,
-#transTr {
-    width: 35px;
-    height: 30px;
-    border-radius: 30px;
-    cursor: pointer;
-    opacity: 0.7;
-    margin-right: 5px;
-    &:hover {
-        opacity: 0.4;
-    }
-    @media (max-width: 1110px) {
-        width: 60px;
-        height: 50px;
-        margin-top: 10px;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-}
-// ############### TRANSLATE FUNCTION ###############
-// ############### BACKGROUND BLUR ###############
-
-.BackgroundContainer {
-    z-index: 2;
-}
-
-.blurOne {
-    pointer-events: none;
-    position: absolute;
-    left: 0;
-    top: 110px;
-    img {
-        width: auto;
-        height: 608px;
-    }
-    @media (max-width: 1100px) {
-        img {
-            width: auto;
-            height: 300px;
-        }
-    }
-}
-
-.blurFour {
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    img {
-        width: auto;
-        height: 608px;
-    }
-    @media (max-width: 1100px) {
-        top: 250px;
-        img {
-            width: auto;
-            height: 300px;
-        }
-    }
-}
-
-.blurEight {
-    pointer-events: none;
-    position: absolute;
-    left: -141px;
-    top: 2253px;
-    img {
-        width: auto;
-        height: 608px;
-    }
-}
-
-// ############### BACKGROUND BLUR ###############
 
 .introLeftTitleStyle1 {
     position: absolute;
@@ -486,7 +396,7 @@ h1 {
         top: 25px;
         left: -110px;
     }
-    @media (max-width: 300px) {
+    @media (max-width: 380px) {
         top: 0;
         left: -100px;
     }
@@ -497,7 +407,7 @@ h1 {
     @media (max-width: 1100px) {
         font-size: 60px;
     }
-    @media (max-width: 300px) {
+    @media (max-width: 380px) {
         font-size: 36px;
     }
 }
@@ -512,7 +422,7 @@ h1 {
         font-size: 28px;
         bottom: -35px;
     }
-    @media (max-width: 300px) {
+    @media (max-width: 380px) {
         font-size: 18px;
         bottom: -20px;
     }
@@ -558,12 +468,141 @@ h1 {
     }
 }
 
+.contactBtn {
+    transition: 225ms ease-in-out;
+    &:hover {
+        opacity: 0.8;
+        transition: 225ms ease-in-out;
+    }
+}
+
+// ##################### MAIN CONTENT #####################
+// ############### TRANSLATE FUNCTION ###############
+#transBtnPosition1 {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    color: #e86f00;
+    @media (max-width: 1110px) {
+        position: unset;
+        left: -55px;
+        bottom: 200px;
+        padding-top: 50px;
+    }
+}
+
+#transBtnPosition2 {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    padding-bottom: 18px;
+    @media (max-width: 1110px) {
+        border-top: 4px solid #141d2f;
+    }
+}
+
+#transDe,
+#transEn,
+#transTr {
+    width: 35px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-right: 5px;
+    &:hover {
+        opacity: 0.4;
+    }
+    @media (max-width: 1110px) {
+        width: 60px;
+        height: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.slideLanguageOpen {
+    animation: slideLanguageOpen 0.8s ease-out;
+    scroll-behavior: smooth;
+}
+
+@keyframes slideLanguageOpen {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slideLanguageClose {
+    animation: slideLanguageClose 0.8s ease-out;
+    scroll-behavior: smooth;
+}
+
+@keyframes slideLanguageClose {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-200%);
+    }
+}
+// ############### TRANSLATE FUNCTION ###############
+// ############### BACKGROUND BLUR ###############
+
+.BackgroundContainer {
+    z-index: 0;
+    overflow: hidden;
+}
+
+.blurOne {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 110px;
+    img {
+        width: auto;
+        height: 608px;
+    }
+    @media (max-width: 1100px) {
+        img {
+            width: auto;
+            height: 300px;
+        }
+    }
+}
+
+.blurFour {
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    img {
+        width: auto;
+        height: 608px;
+    }
+    @media (max-width: 1100px) {
+        top: 250px;
+        img {
+            width: auto;
+            height: 300px;
+        }
+    }
+}
+
+.blurEight {
+    pointer-events: none;
+    position: absolute;
+    left: -334px;
+    top: 2247px;
+    img {
+        width: auto;
+        height: 608px;
+    }
+}
 .languagebtn {
     padding-left: 30px;
 }
-
-.logoSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// ############### BACKGROUND BLUR ###############

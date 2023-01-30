@@ -64,15 +64,80 @@ export class FirstSectionHeaderComponent implements OnInit {
   }
 
   // Open Mobile Navbar
-  private isNavbarOpen = false;
-  mobileNavbar() {
-    this.isNavbarOpen = !this.isNavbarOpen;
-    if (this.isNavbarOpen) {
-      this.openMobileNavbar();
-    } else {
-      this.closeMobileNavbar();
+  // private isNavbarOpen = false;
+  // mobileNavbar() {
+  //   this.isNavbarOpen = !this.isNavbarOpen;
+  //   if (this.isNavbarOpen) {
+  //     this.openMobileNavbar();
+  //   } else {
+  //     this.closeMobileNavbar();
+  //   }
+  // }
+
+  // openMobileNavbar() {
+  //   document.getElementById('mobileNavbarContent').classList.add('slideNavbarOpen');
+  //   document.getElementById('mobileNavbarContent').classList.remove('d-none');
+  //   document.documentElement.style.setProperty('overflow-y', 'hidden');
+  // }
+
+  // closeMobileNavbar() {
+  //   document.getElementById('mobileNavbarContent').classList.add('slideNavbarClose');
+  //   document.getElementById('mobileNavbarContent').classList.add('d-none');
+  //   document.documentElement.style.setProperty('overflow-y', 'auto');
+  // }
+
+
+
+  openAndCloseNavbar() {
+    const navbarMenu = document.getElementById('mobileNavbarContent');
+    if (navbarMenu) {
+      if (navbarMenu.classList.contains('d-none')) {
+        navbarMenu.classList.add('slideNavbarOpen');
+        navbarMenu.classList.remove('d-none');
+        const animationEnd = function () {
+          navbarMenu.classList.remove('slideNavbarOpen');
+          navbarMenu.removeEventListener('animationend', animationEnd);
+        };
+        navbarMenu.addEventListener('animationend', animationEnd);
+      } else {
+        navbarMenu.classList.add('slideNavbarClose');
+        const animationEnd = function () {
+          navbarMenu.classList.remove('slideNavbarClose');
+          navbarMenu.classList.add('d-none');
+          navbarMenu.removeEventListener('animationend', animationEnd);
+        };
+        navbarMenu.addEventListener('animationend', animationEnd);
+      }
     }
   }
+
+  openAndCloseLanguage() {
+    const languageMenu = document.getElementById('languagebtn');
+    if (languageMenu) {
+      if (languageMenu.classList.contains('d-none')) {
+        languageMenu.classList.add('slideLanguageOpen');
+        languageMenu.classList.remove('d-none');
+
+        const animationEnd = function () {
+          languageMenu.classList.remove('slideLanguageOpen');
+          languageMenu.removeEventListener('animationend', animationEnd);
+        };
+        languageMenu.addEventListener('animationend', animationEnd);
+
+      } else {
+        languageMenu.classList.add('slideLanguageClose');
+
+        const animationEnd = function () {
+          languageMenu.classList.remove('slideLanguageClose');
+          languageMenu.classList.add('d-none');
+          languageMenu.removeEventListener('animationend', animationEnd);
+        };
+        languageMenu.addEventListener('animationend', animationEnd);
+      }
+    }
+  }
+
+
 
   private isLanguageOpen = false;
   openLanguage() {
@@ -92,32 +157,21 @@ export class FirstSectionHeaderComponent implements OnInit {
     document.getElementById('languagebtn').classList.add('d-none');
   }
 
-  openMobileNavbar() {
-    document.getElementById('mobileNavbarContent').classList.add('slide');
-    document.getElementById('mobileNavbarContent').classList.remove('d-none');
-    document.documentElement.style.setProperty('overflow-y', 'hidden');
-  }
 
-  closeMobileNavbar() {
-    document.getElementById('mobileNavbarContent').classList.add('d-none');
-    document.documentElement.style.setProperty('overflow-y', 'auto');
-  }
-
-  // Close by Select Section in the menu to see the selected Section
   openContact() {
-    this.closeMobileNavbar();
+    this.openAndCloseNavbar();
   }
 
   openAbout() {
-    this.closeMobileNavbar();
+    this.openAndCloseNavbar();
   }
 
   openProjects() {
-    this.closeMobileNavbar();
+    this.openAndCloseNavbar();
   }
 
   openSkills() {
-    this.closeMobileNavbar();
+    this.openAndCloseNavbar();
   }
 
 
@@ -125,7 +179,7 @@ export class FirstSectionHeaderComponent implements OnInit {
   getElById(id: any, text: any) {      // this.getElById('trans',``);
     document.getElementById(id).innerHTML = `${text}`;
   }
-  
+
   // ''''''''''''''''TRANSLATE FUNCTION''''''''''''''''
   clickLanguageDE() {
     this.getElById('trans1', `Über mich`);

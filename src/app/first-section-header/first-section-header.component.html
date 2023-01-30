@@ -5,8 +5,8 @@
                 <img src="assets/img/logowhite.png" class="imgClickBlock" id="clickLogoStyle"
                     onClick="location.reload()" alt="own made Logo">
             </a>
-            <div class="hideMobile">
-                <img class="languagebtn" (click)="openLanguage()" src="assets/img/languagebtn.png" alt="language Icon">
+            <div class="hideMobile languageBtnHover">
+                <img class="languagebtn" (click)="openAndCloseLanguage()" src="assets/img/languagebtn.png" alt="language Icon">
             </div>
             <div class="hideMobile">
                 <div id="transBtnPosition1" id="languagebtn" class="d-none">
@@ -18,23 +18,17 @@
                 </div>
             </div>
         </div>
-
         <div class="navbarLinks hideMobile" data-aos="fade-left" data-aos-easing="ease-in-sine"
             data-aos-duration="1500">
-
             <a id="trans1" href="#about">About me</a>
             <a id="trans3" href="#skills">Skills</a>
             <a id="trans2" href="#projects">Portfolio</a>
         </div>
         <div class="mobileNavbar hideDesktop">
-            <img (click)="mobileNavbar()" src="assets/img/mobilemenu.png" alt="mobile navbar menü">
+            <img (click)="openAndCloseNavbar()" src="assets/img/mobilemenu.png" alt="mobile navbar menü">
         </div>
 
         <div id="mobileNavbarContent" class="d-none hideDesktop">
-
-            <!-- <span (click)="closeMobileNavbar()" class="closeMobileBtn"><img src="assets/img/mobilemenu.png"
-                    alt="mobile navbar menü"></span> -->
-
             <a id="trans31" (click)="openAbout()" href="#about">
                 About me
             </a>
@@ -66,10 +60,6 @@
                     <span class="introLeftTitleStyle2" id="trans29">Yener Bas</span> <br>
                     <span class="introLeftTitleStyle3" id="trans4-2">FRONTEND DEVELOPER</span>
                 </div>
-            </div>
-            <div class="introRight" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                data-aos-duration="1500">
-                <!-- <img src="assets/img/selfpicture1-removebg.png" alt="Self Picture"> -->
             </div>
         </div>
         <a href="#contact" class="contactBtn">
@@ -107,7 +97,6 @@
         <div class="blurOne"> <img src="assets/img/blur1.png"></div>
         <div class="blurFour"> <img src="assets/img/blur4.png"></div>
         <div class="blurEight"> <img src="assets/img/blur8.png"></div>
-
     </div>
 
 </header>
