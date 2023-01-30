@@ -3,13 +3,17 @@ body {
     margin: 0px;
     font-family: 'Poppins';
     font-style: normal;
-    overflow: hidden;
+    overflow-x: hidden !important;
 }
-
+@media (max-width: 1130px) {
+    body, html {
+      overflow-x: hidden !important;
+    }
+  }
 html {
     scroll-behavior: smooth;
     transition: 225ms ease-in-out;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
 ::-webkit-scrollbar {

@@ -4,7 +4,7 @@
     color: white;
     display: flex;
     justify-content: center;
-    @media (max-width: 1100px) {
+    @media (max-width: 1130px) {
         height: 675px;
     }
 }
@@ -13,7 +13,7 @@
     z-index: 1;
     max-width: 1100px;
     width: 100vw;
-    @media (max-width: 1100px) {
+    @media (max-width: 1130px) {
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
@@ -24,7 +24,7 @@
 
 .secondSectionContentLeft {
     padding-top: 50px;
-    @media (max-width: 1100px) {
+    @media (max-width: 1130px) {
         padding-top: 0px;
     }
 }
@@ -57,7 +57,7 @@
         padding-top: 8px;
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1130px) {
         font-size: 11px;
         padding-top: 40px;
 
@@ -101,7 +101,7 @@
             opacity: 0.8;
         }
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 1130px) {
         button {
             position: absolute;
             top: 380px;
@@ -123,7 +123,7 @@
     flex-direction: row-reverse;
     height: 0;
     align-items: center;
-    @media (max-width: 1100px) {
+    @media (max-width: 1130px) {
         right: unset;
         left: 0px;
        
@@ -136,7 +136,7 @@
     border: 2px solid #d61ce6;
     width: 290px;
     overflow: hidden;
-    @media (max-width: 1100px) {
+    @media (max-width: 1130px) {
         width: 100vw;
     }
 }
@@ -149,7 +149,7 @@
     a {
         text-decoration: none;
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 1130px) {
         position: unset;
         display: flex;
         flex-direction: column;
@@ -163,7 +163,7 @@
     font-weight: 700;
     line-height: 108px;
     padding-right: 40px;
-    @media (max-width: 1100px) {
+    @media (max-width: 1130px) {
         font-size: 45px;
         padding-left: 20px;
     }
